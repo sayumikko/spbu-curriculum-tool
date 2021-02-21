@@ -34,11 +34,6 @@ namespace CurriculumParser
         public List<Competence> Competences { get; private set; }
 
         /// <summary>
-        /// Типы работ
-        /// </summary>
-        public List<WorkType> WorkTypes { get; private set; }
-
-        /// <summary>
         /// Создает экземляр класса <name>DocxCurriculum</name>
         /// </summary>
         /// <param name="fileName">Имя файла с расширением .docx в котором содержится </param>
@@ -49,7 +44,6 @@ namespace CurriculumParser
 
             CurriculumCode = DocxCurriculumCodeParser.Parse(body);
             Programme = DocxProgrammeParser.Parse(body);
-            WorkTypes = DocxWorkTypesParser.Parse(body);
             Competences = DocxCompetencesParser.Parse(body);
             ElectiveBlocks = new List<ElectivesBlock>();
 

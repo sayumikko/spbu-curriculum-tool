@@ -125,10 +125,10 @@ namespace CurriculumParser
                     prevMonitoringType = monitoringTypeCell.InnerText;
                 }
 
-                var workHours = ParseDisciplineWorkHours(row);
+                var lessonTypesHours = ParseDisciplineWorkHours(row);
 
                 var implementation = new DisciplineImplementation(disciplines[regNumber], semester, prevIntensity,
-                    realization, trajectory, prevMonitoringType, workHours, prevCompetences);
+                    realization, trajectory, prevMonitoringType, lessonTypesHours, prevCompetences);
                 disciplines[regNumber].Implementations.Add(implementation);
 
                 if (type == DisciplineType.Elective)
@@ -228,15 +228,10 @@ namespace CurriculumParser
             return competences.Where(c => codes.Contains(c.Code)).ToList();
         }
 
-        private string ParseDisciplineWorkHours(TableRow row)
+        private List<LessonTypeHours> ParseDisciplineWorkHours(TableRow row)
         {
-            var workHours = "";
-            var cells = row.Descendants<TableCell>().Skip(5).ToList();
-            for (var i = 0; i < cells.Count(); ++i)
-            {
-                workHours += cells[i].InnerText + ' ';
-            }
-            return workHours.Trim();
+            var hours = row.Descendants<TableCell>().Skip(5).Select(c => c.InnerText.Trim()).ToList();
+            return DocxLessonTypeHoursParser.ParseLessonTypeHours(hours);
         }
     }
 }
