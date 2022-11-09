@@ -8,10 +8,22 @@ module Checks =
         printfn "Здесь будет логика проверки зачетных часов"
 
     let competences (curriculum: DocxCurriculum) =
-        // curriculum.Disciplines
-        // |> Seq.iter (fun d ->
-        //     d.Implementations
-        //     |> Seq.iter (fun d -> d.Competences |> Seq.iter (fun d -> printfn "%s" d.Code)))
-        printfn "Здесь будет логика проверки компетенций"
 
-    let checks (curriculum: DocxCurriculum) = competences curriculum
+        let available_competences = curriculum.Competences |> Seq.map (fun d -> d.Code)
+
+        let competences =
+            curriculum.Disciplines
+            |> Seq.map (fun d -> d.Implementations)
+            |> Seq.concat
+            |> Seq.map (fun d -> d.Competences)
+            |> Seq.concat
+            |> Seq.map (fun d -> d.Code)
+            |> Seq.distinct
+
+        for comp in available_competences do    
+            if not (Seq.contains comp competences) then
+                printfn "Warning! Unused competence!"
+
+    let checks (curriculum: DocxCurriculum) =
+        competences curriculum
+        hours curriculum
