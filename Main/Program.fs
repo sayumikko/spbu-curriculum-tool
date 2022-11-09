@@ -10,9 +10,7 @@ let planCodeToFileName planCode =
     Directory.EnumerateFiles(System.AppDomain.CurrentDomain.BaseDirectory + "/../../../" + plansFolder)
     |> Seq.find (fun f -> planNameToCode f = planCode)
 
-let print_help () =
-    printfn "Это инструмент для работы с учебными планами СПбГУ"
-    printfn "Введите номер учебного плана и параметры предупреждений"
+let print_plans () =
     printfn "Имеющиеся учебные планы:"
 
     Directory.EnumerateFiles(plansFolder)
@@ -22,9 +20,18 @@ let print_help () =
 [<EntryPoint>]
 let main argv =
     if argv.Length = 0 then
-        print_help ()
+        printfn "Передайте учебный план и параметры предупреждений."
+        print_plans ()
     else
-        let curriculum = DocxCurriculum(planCodeToFileName argv[0]) //todo: add wrong name handler
-        Checks.checks curriculum
+        let t =
+            Directory.EnumerateFiles(plansFolder)
+            |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
+
+        if Seq.contains argv[0] t then
+            let curriculum = DocxCurriculum(planCodeToFileName argv[0])
+            Checks.checks curriculum
+        else
+            printfn "Передайте первым параметром номер учебного плана"
+            print_plans ()
 
     0
