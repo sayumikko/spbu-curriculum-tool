@@ -6,3 +6,5 @@
 *.csproj.user
 *.datasource
 *.settings
+
+.fake
