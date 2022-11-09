@@ -23,11 +23,11 @@ let main argv =
         printfn "Передайте учебный план и параметры предупреждений."
         print_plans ()
     else
-        let t =
+        let actual_curricula =
             Directory.EnumerateFiles(plansFolder)
             |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
 
-        if Seq.contains argv[0] t then
+        if Seq.contains argv[0] actual_curricula then
             let curriculum = DocxCurriculum(planCodeToFileName argv[0])
             Checks.checks curriculum
         else
