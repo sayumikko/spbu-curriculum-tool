@@ -4,8 +4,12 @@ open CurriculumParser
 
 module Checks =
 
-    let hours (curriculum: DocxCurriculum) =
-        printfn "Здесь будет логика проверки зачетных часов"
+    let hours (curriculum: DocxCurriculum) (number_of_semester: int) =
+
+        let labor_intesity = Semester(number_of_semester, curriculum).LaborIntensity
+
+        if labor_intesity <> 30 then
+            printfn "Wraning! Labor intensity (%d) does not correspond to the norm (30)!" labor_intesity
 
     let competences (curriculum: DocxCurriculum) =
 
@@ -20,10 +24,10 @@ module Checks =
             |> Seq.map (fun d -> d.Code)
             |> Seq.distinct
 
-        for comp in available_competences do    
+        for comp in available_competences do
             if not (Seq.contains comp competences) then
                 printfn "Warning! Unused competence!"
 
-    let checks (curriculum: DocxCurriculum) =
+    let checks (curriculum: DocxCurriculum) (number_of_semester: int) =
         competences curriculum
-        hours curriculum
+        hours curriculum number_of_semester

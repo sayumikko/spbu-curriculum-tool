@@ -27,11 +27,16 @@ let main argv =
             Directory.EnumerateFiles(plansFolder)
             |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
 
+        let semesters = [ 1..8 ]
+
         if Seq.contains argv[0] actual_curricula then
-            let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-            Checks.checks curriculum
+            if argv.Length = 2 then
+                if List.exists (fun elem -> elem = (int argv[1])) semesters then
+                    let curriculum = DocxCurriculum(planCodeToFileName argv[0])
+                    Checks.checks curriculum (int argv[1])
         else
             printfn "Передайте первым параметром номер учебного плана"
+            printfn "Передайте вторым параметром номер семестра"
             print_plans ()
 
     0
