@@ -17,7 +17,7 @@ module Checks =
             if i = max_semester then
                 is_last_semester <- true
             else
-                is_last_semester <- true
+                is_last_semester <- false
             
             let mutable labor_intesity = 0
 
