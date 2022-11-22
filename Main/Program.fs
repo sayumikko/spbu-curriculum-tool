@@ -17,6 +17,11 @@ let print_plans () =
     |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
     |> Seq.iter (printf "%s ")
 
+let print_help () = 
+    printfn "Данный инструмент предназначен для проверки учебных планов СПбГУ."
+    printfn "На данный момент доступны следующие параметры:"
+    printfn ""
+
 [<EntryPoint>]
 let main argv =
     if argv.Length = 0 then
@@ -27,22 +32,11 @@ let main argv =
             Directory.EnumerateFiles(plansFolder)
             |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
 
-
         if Seq.contains argv[0] actual_curricula then
-            let mutable max_semester = 0
-
             let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-
-            for discipline in curriculum.Disciplines do
-                for implementation in discipline.Implementations do
-                    if implementation.Semester > max_semester then
-                        max_semester <- implementation.Semester
-
-            for i = 1 to max_semester do
-                if i = max_semester then
-                    Checks.checks curriculum i true
-                else
-                    Checks.checks curriculum i false
+            
+            Checks.checks curriculum 
+            
         else
             printfn "Передайте первым параметром номер учебного плана"
             print_plans ()

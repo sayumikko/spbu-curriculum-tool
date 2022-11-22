@@ -4,20 +4,34 @@ open CurriculumParser
 
 module Checks =
 
-    let hours (curriculum: DocxCurriculum) (number_of_semester: int) (is_last_semester: bool) =
+    let hours (curriculum: DocxCurriculum) =
+        let max_semester = curriculum.Disciplines
+                            |> Seq.map (fun d -> d.Implementations)
+                            |> Seq.concat
+                            |> Seq.map (fun s -> s.Semester)
+                            |> Seq.max
 
-        let mutable labor_intesity = 0
+        let mutable is_last_semester = false 
 
-        if is_last_semester then
-            for examination in curriculum.Examinations do
-                labor_intesity <-
-                    Semester(number_of_semester, curriculum).LaborIntensity
-                    + examination.LaborIntensity
-        else
-            labor_intesity <- Semester(number_of_semester, curriculum).LaborIntensity
+        for i = 1 to max_semester do
+            if i = max_semester then
+                is_last_semester <- true
+            else
+                is_last_semester <- true
+            
+            let mutable labor_intesity = 0
 
-        if labor_intesity <> 30 then
-            printfn "Wraning! Labor intensity (%d) does not match with norm (30) in %d semester!" labor_intesity number_of_semester
+            if is_last_semester then
+                for examination in curriculum.Examinations do
+                    labor_intesity <-
+                        Semester(i, curriculum).LaborIntensity
+                        + examination.LaborIntensity
+            else
+                labor_intesity <- Semester(i, curriculum).LaborIntensity
+
+            if labor_intesity <> 30 then
+                printfn "Внимание! Количество зачетных единиц (%d) не совпадает с нормой (30)." labor_intesity
+                printfn "Проверьте семестр %d!" i
 
     let competences (curriculum: DocxCurriculum) =
 
@@ -34,8 +48,8 @@ module Checks =
 
         for comp in available_competences do
             if not (Seq.contains comp competences) then
-                printfn "Warning! Unused competence!"
+                printfn "Warning! Unused competence %s!" comp
 
-    let checks (curriculum: DocxCurriculum) (number_of_semester: int) =
+    let checks (curriculum: DocxCurriculum) =
         competences curriculum
-        hours curriculum number_of_semester
+        hours curriculum
