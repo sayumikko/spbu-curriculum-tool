@@ -4,12 +4,20 @@ open CurriculumParser
 
 module Checks =
 
-    let hours (curriculum: DocxCurriculum) (number_of_semester: int) =
+    let hours (curriculum: DocxCurriculum) (number_of_semester: int) (is_last_semester: bool) =
 
-        let labor_intesity = Semester(number_of_semester, curriculum).LaborIntensity
+        let mutable labor_intesity = 0
+
+        if is_last_semester then
+            for examination in curriculum.Examinations do
+                labor_intesity <-
+                    Semester(number_of_semester, curriculum).LaborIntensity
+                    + examination.LaborIntensity
+        else
+            labor_intesity <- Semester(number_of_semester, curriculum).LaborIntensity
 
         if labor_intesity <> 30 then
-            printfn "Wraning! Labor intensity (%d) does not correspond to the norm (30)!" labor_intesity
+            printfn "Wraning! Labor intensity (%d) does not match with norm (30) in %d semester!" labor_intesity number_of_semester
 
     let competences (curriculum: DocxCurriculum) =
 
