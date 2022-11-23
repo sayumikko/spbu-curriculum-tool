@@ -1,8 +1,8 @@
-﻿namespace Checks
+﻿namespace Warnings
 
 open CurriculumParser
 
-module Checks =
+module Warnings =
 
     let hours (curriculum: DocxCurriculum) =
         let max_semester = curriculum.Disciplines

@@ -1,4 +1,4 @@
-﻿open Checks
+﻿open Warnings
 open System.IO
 open CurriculumParser
 
@@ -36,16 +36,21 @@ let main argv =
     elif argv[0] = "-help" then 
         print_help ()
     else
-        let actual_curricula =
-            Directory.EnumerateFiles(plansFolder)
-            |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
+        try
+            let actual_curricula =
+                Directory.EnumerateFiles(plansFolder)
+                |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
 
-        if Seq.contains argv[0] actual_curricula then
-            let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-            Checks.checks curriculum argv
+            if Seq.contains argv[0] actual_curricula then
+                let curriculum = DocxCurriculum(planCodeToFileName argv[0])
+                Warnings.checks curriculum argv
             
-        else
-            printfn "Передайте первым параметром номер учебного плана"
-            print_plans ()
+            else
+                printfn "Передайте первым параметром номер учебного плана"
+                print_plans ()
+        
+        with 
+        | :? DirectoryNotFoundException -> printfn "Каталог %s не найден. Пожалуйста, поместите учебные планы туда." 
+                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder) //todo user catalog
 
     0
