@@ -34,6 +34,11 @@ namespace CurriculumParser
         public List<Competence> Competences { get; private set; }
 
         /// <summary>
+        /// Выпускная квалификационная работа
+        /// </summary>
+        public List<Examination> Examinations { get; private set; }
+
+        /// <summary>
         /// Создает экземляр класса <name>DocxCurriculum</name>
         /// </summary>
         /// <param name="fileName">Имя файла с расширением .docx в котором содержится </param>
@@ -49,6 +54,9 @@ namespace CurriculumParser
 
             var disciplinesParser = new DocxDisciplinesParser(body, Competences, Programme, ElectiveBlocks);
             Disciplines = disciplinesParser.Parse();
+
+            var examinationsParser = new DocxExaminationParser(body, Competences);
+            Examinations = examinationsParser.Parse();
         }
     }
 }
