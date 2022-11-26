@@ -11,11 +11,11 @@ let planCodeToFileName planCode =
     |> Seq.find (fun f -> planNameToCode f = planCode)
 
 let print_plans () =
+    let plans = Directory.EnumerateFiles(plansFolder) |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
+
     printfn "Имеющиеся учебные планы:"
 
-    Directory.EnumerateFiles(plansFolder)
-    |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
-    |> Seq.iter (printf "%s ")
+    Seq.iter (printf "%s ") plans
 
 let print_checks () = 
     printfn "На данный момент доступны следующие параметры:"
@@ -26,13 +26,16 @@ let print_help () =
     printfn "Чтобы начать, передайте первым параметром номер учебного плана."
     printfn "Далее передайте желаемые параметры предупреждений."
     printfn "Отсутствие параметра предупреждений равносильно выполнению всех проверок."
-    print_checks ()
 
 [<EntryPoint>]
 let main argv =
     if argv.Length = 0 then
-        printfn "Передайте учебный план и параметры предупреждений."
-        print_plans ()
+        try
+            print_help ()
+            print_plans ()
+        with 
+        | :? DirectoryNotFoundException -> printfn "Невозможно начать работу, так как каталог %s не найден. Пожалуйста, поместите учебные планы туда." 
+                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
     elif argv[0] = "-help" then 
         print_help ()
     else
@@ -44,13 +47,14 @@ let main argv =
             if Seq.contains argv[0] actual_curricula then
                 let curriculum = DocxCurriculum(planCodeToFileName argv[0])
                 Warnings.checks curriculum argv
-            
             else
-                printfn "Передайте первым параметром номер учебного плана"
+                printfn "Передайте первым параметром номер учебного плана."
                 print_plans ()
         
         with 
         | :? DirectoryNotFoundException -> printfn "Каталог %s не найден. Пожалуйста, поместите учебные планы туда." 
-                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder) //todo user catalog
+                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
+        | :? InvalidDataException -> printfn "Данный файл имеет расширение, отличное от формата .docx. Пожалуйста, передайте правильный файл."
+        | :? CurriculumParser.CurriculumParsingException -> printfn "Ошибка парсинга учебного плана."
 
     0
