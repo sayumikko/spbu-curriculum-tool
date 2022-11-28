@@ -46,7 +46,7 @@ let main argv =
 
             if Seq.contains argv[0] actual_curricula then
                 let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-                Warnings.checks curriculum argv
+                Warnings.checks curriculum argv |> Seq.iter (fun s -> printfn "Some error")
             else
                 printfn "Передайте первым параметром номер учебного плана."
                 print_plans ()
