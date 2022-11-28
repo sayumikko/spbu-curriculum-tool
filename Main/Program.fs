@@ -2,12 +2,12 @@
 open System.IO
 open CurriculumParser
 
-let plansFolder = "../WorkingPlans"
+let plansFolder = "WorkingPlans" 
 
 let planNameToCode fileName = FileInfo(fileName).Name.Substring(3, 9)
 
 let planCodeToFileName planCode =
-    Directory.EnumerateFiles(System.AppDomain.CurrentDomain.BaseDirectory + "/../../../" + plansFolder)
+    Directory.EnumerateFiles(System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
     |> Seq.find (fun f -> planNameToCode f = planCode)
 
 let print_plans () =
