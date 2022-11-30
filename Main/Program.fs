@@ -19,13 +19,17 @@ let print_plans () =
 
 let print_checks () = 
     printfn "На данный момент доступны следующие параметры:"
-    printfn "-off -- отключить все проверки."
+    printfn "-off - отключить все проверки. При использовании с другими параметрами имеет более высокий приоритет."
+    printfn "-hours - проверка количества зачетных единиц в семестрах."
+    printfn "-compet - проверка соответствия списка компетенций используемым компетенциям."
+    printfn "-err - вывести все прудупреждения как ошибки (по умолчанию выводится текст в консоль)."
 
 let print_help () = 
     printfn "Данный инструмент предназначен для проверки учебных планов СПбГУ."
     printfn "Чтобы начать, передайте первым параметром номер учебного плана."
     printfn "Далее передайте желаемые параметры предупреждений."
     printfn "Отсутствие параметра предупреждений равносильно выполнению всех проверок."
+    printfn "Чтобы увидеть доступные параметры проверок введите -checks."
 
 [<EntryPoint>]
 let main argv =
@@ -38,6 +42,8 @@ let main argv =
                                                 (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
     elif argv[0] = "-help" then 
         print_help ()
+    elif argv[0] = "-checks" then
+        print_checks ()
     else
         try
             let actual_curricula =
@@ -46,7 +52,7 @@ let main argv =
 
             if Seq.contains argv[0] actual_curricula then
                 let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-                Warnings.checks curriculum argv |> Seq.iter (fun s -> printfn "Some error")
+                Warnings.checks curriculum argv
             else
                 printfn "Передайте первым параметром номер учебного плана."
                 print_plans ()
