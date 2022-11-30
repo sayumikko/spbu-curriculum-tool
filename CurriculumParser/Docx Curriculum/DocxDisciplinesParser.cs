@@ -16,6 +16,7 @@ namespace CurriculumParser
         private readonly List<Competence> competences;
         private readonly List<ElectivesBlock> electivesBlocks;
         private readonly Dictionary<string, Discipline> disciplines;
+        private readonly List<DisciplinesBlock> disciplinesBlocks;
 
         /// <summary>
         /// Созадет экземляр класса <name>DocxDisciplinesParser</name>
@@ -24,12 +25,14 @@ namespace CurriculumParser
         /// <param name="competences">Компетенции</param>
         /// <param name="programme">Программа</param>
         /// <param name="electivesBlocks">Элективные блоки</param>
-        public DocxDisciplinesParser(Body body, List<Competence> competences, Programme programme, List<ElectivesBlock> electivesBlocks)
+        /// <param name="electivesBlocks">Блоки дисциплин</param>
+        public DocxDisciplinesParser(Body body, List<Competence> competences, Programme programme, List<ElectivesBlock> electivesBlocks, List<DisciplinesBlock> disciplinesBlocks)
         {
             this.body = body;
             this.programme = programme;
             this.competences = competences;
             this.electivesBlocks = electivesBlocks;
+            this.disciplinesBlocks = disciplinesBlocks;
             disciplines = new Dictionary<string, Discipline>();
         }
 
@@ -56,6 +59,9 @@ namespace CurriculumParser
             var semester = 1;
             ElectivesBlock electivesBlock = null;
 
+            int isDisciplinesBlock = 0;
+            DisciplinesBlock disciplinesBlock = null;
+
             var prevIntensity = 0;
             var prevMonitoringType = "";
             List<Competence> prevCompetences = null;
@@ -79,10 +85,24 @@ namespace CurriculumParser
                     else if (text.Contains("Семестр"))
                     {
                         semester = ParseSemesterNumber(text);
+                        isDisciplinesBlock = 0;
+                        if (disciplinesBlock != null && semester - 1 == disciplinesBlock.Semester)
+                        {
+                            disciplinesBlocks.Add(disciplinesBlock);
+                        }
                     }
                     else if (type == DisciplineType.Elective && !text.Contains("Не предусмотрено") && !text.Contains("год"))
                     {
                         specialization = GetSpecialization(text);
+                    }
+                    else if (text.Contains("Блок(и) дисциплин"))
+                    {
+                        isDisciplinesBlock = 1;
+                    }
+                    else if (isDisciplinesBlock == 1 && text.Contains("Блок дисциплин"))
+                    {
+                        string name = text.Replace("Блок дисциплин ", "");
+                        disciplinesBlock = new DisciplinesBlock(name, semester);
                     }
                     continue;
                 }
@@ -135,6 +155,14 @@ namespace CurriculumParser
                 {
                     electivesBlock.Disciplines.Add((disciplines[regNumber], implementation));
                     disciplines[regNumber].ElectivesBlocks.Add(electivesBlock);
+                }
+                if (type == DisciplineType.Elective || type == DisciplineType.Facultative)
+                {
+                    isDisciplinesBlock = 0;
+                }
+                if (isDisciplinesBlock == 1)
+                {
+                    disciplinesBlock.Implementations.Add(implementation);
                 }
             }
 

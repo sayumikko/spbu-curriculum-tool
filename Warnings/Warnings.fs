@@ -16,13 +16,11 @@ module Checks =
         let max_semester = count_max_semester (curriculum)
 
         for i = 1 to max_semester do
-            let mutable labor_intesity = 0
+            let mutable labor_intesity = Semester(i, curriculum).LaborIntensity
 
             if i = max_semester then
                 for examination in curriculum.Examinations do
-                    labor_intesity <- Semester(i, curriculum).LaborIntensity + examination.LaborIntensity
-            else
-                labor_intesity <- Semester(i, curriculum).LaborIntensity
+                    labor_intesity <- labor_intesity + examination.LaborIntensity
 
             if labor_intesity <> 30 then
                 printfn "Внимание! Количество зачетных единиц (%d) не совпадает с нормой (30)." labor_intesity
