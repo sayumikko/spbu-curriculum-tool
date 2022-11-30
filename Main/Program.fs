@@ -1,4 +1,4 @@
-﻿open Checks
+﻿open Warnings
 open System.IO
 open CurriculumParser
 
@@ -11,41 +11,56 @@ let planCodeToFileName planCode =
     |> Seq.find (fun f -> planNameToCode f = planCode)
 
 let print_plans () =
+    let plans = Directory.EnumerateFiles(plansFolder) |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
+
     printfn "Имеющиеся учебные планы:"
 
-    Directory.EnumerateFiles(plansFolder)
-    |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
-    |> Seq.iter (printf "%s ")
+    Seq.iter (printf "%s ") plans
 
 let print_checks () = 
     printfn "На данный момент доступны следующие параметры:"
-    printfn "-off -- отключить все проверки."
+    printfn "-off - отключить все проверки. При использовании с другими параметрами имеет более высокий приоритет."
+    printfn "-hours - проверка количества зачетных единиц в семестрах."
+    printfn "-compet - проверка соответствия списка компетенций используемым компетенциям."
+    printfn "-err - вывести все прудупреждения как ошибки (по умолчанию выводится текст в консоль)."
 
 let print_help () = 
     printfn "Данный инструмент предназначен для проверки учебных планов СПбГУ."
     printfn "Чтобы начать, передайте первым параметром номер учебного плана."
     printfn "Далее передайте желаемые параметры предупреждений."
     printfn "Отсутствие параметра предупреждений равносильно выполнению всех проверок."
-    print_checks ()
+    printfn "Чтобы увидеть доступные параметры проверок введите -checks."
 
 [<EntryPoint>]
 let main argv =
     if argv.Length = 0 then
-        printfn "Передайте учебный план и параметры предупреждений."
-        print_plans ()
+        try
+            print_help ()
+            print_plans ()
+        with 
+        | :? DirectoryNotFoundException -> printfn "Невозможно начать работу, так как каталог %s не найден. Пожалуйста, поместите учебные планы туда." 
+                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
     elif argv[0] = "-help" then 
         print_help ()
+    elif argv[0] = "-checks" then
+        print_checks ()
     else
-        let actual_curricula =
-            Directory.EnumerateFiles(plansFolder)
-            |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
+        try
+            let actual_curricula =
+                Directory.EnumerateFiles(plansFolder)
+                |> Seq.map (fun p -> FileInfo(p).Name.Substring(3, 9))
 
-        if Seq.contains argv[0] actual_curricula then
-            let curriculum = DocxCurriculum(planCodeToFileName argv[0])
-            Checks.checks curriculum argv
-            
-        else
-            printfn "Передайте первым параметром номер учебного плана"
-            print_plans ()
+            if Seq.contains argv[0] actual_curricula then
+                let curriculum = DocxCurriculum(planCodeToFileName argv[0])
+                Warnings.checks curriculum argv
+            else
+                printfn "Передайте первым параметром номер учебного плана."
+                print_plans ()
+        
+        with 
+        | :? DirectoryNotFoundException -> printfn "Каталог %s не найден. Пожалуйста, поместите учебные планы туда." 
+                                                (System.AppDomain.CurrentDomain.BaseDirectory + plansFolder)
+        | :? InvalidDataException -> printfn "Данный файл имеет расширение, отличное от формата .docx. Пожалуйста, передайте правильный файл."
+        | :? CurriculumParser.CurriculumParsingException -> printfn "Ошибка парсинга учебного плана."
 
     0
