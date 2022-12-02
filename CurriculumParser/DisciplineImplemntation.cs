@@ -20,7 +20,7 @@ namespace CurriculumParser
         /// <param name="competences">Формируемые компетенции</param>
         public DisciplineImplementation(Discipline discipline, int semester, int laborIntensity, 
             string realization, string trajectory, string monitoringTypes, 
-            string workHours, List<Competence> competences)
+            List<LessonTypeHours> workHours, List<Competence> competences)
         {
             Discipline = discipline;
             Semester = semester;
@@ -28,7 +28,7 @@ namespace CurriculumParser
             Realization = realization;
             Trajectory = trajectory;
             MonitoringTypes = monitoringTypes;
-            WorkHours = workHours;
+            LessonTypeHours = workHours;
             Competences = competences;
         }
 
@@ -63,9 +63,9 @@ namespace CurriculumParser
         public string MonitoringTypes { get; private set; }
 
         /// <summary>
-        /// Часы работы с разбиением по типу
+        /// Содержит количество часов выделенное под каждый тип занятия
         /// </summary>
-        public string WorkHours { get; private set; }
+        public List<LessonTypeHours> LessonTypeHours { get; private set; }
 
         /// <summary>
         /// Формируемые компетенции

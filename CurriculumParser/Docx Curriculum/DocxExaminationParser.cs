@@ -6,17 +6,19 @@ using System.Text.RegularExpressions;
 
 namespace CurriculumParser
 {
+    /// <summary>
+    /// Парсер информации о итоговой аттестации
+    /// </summary>
     public class DocxExaminationParser
     {
-        private List<Competence> competences;
         private Body body;
+        private List<Competence> competences;
 
         public DocxExaminationParser(Body body, List<Competence> competences)
         {
             this.body = body;
             this.competences = competences;
         }
-
 
         public List<Examination> Parse()
         {
@@ -54,7 +56,7 @@ namespace CurriculumParser
             }
             catch (Exception e)
             {
-                throw new CurriculumParsingException("Ошибка парсинга выпускных работ .docx", e);
+                throw new CurriculumParsingException("Ошибка парсинга итоговой аттестации .docx", e);
             }
         }
 
