@@ -3,6 +3,36 @@
 open CurriculumParser
 
 module Warnings =
+    let level_of_education_semesters (curriculum: DocxCurriculum) =
+        let mutable warnings = Seq.empty
+
+        let semesters =
+            curriculum.Disciplines
+            |> Seq.map (fun d -> d.Implementations)
+            |> Seq.concat
+            |> Seq.map (fun i -> i.Semester)
+            |> Seq.distinct
+
+        let level = curriculum.Programme.LevelOfEducation.ToLower()
+
+        let number_of_semesters =
+            match level with
+            | "бакалавриат" -> 8
+            | "специалитет" -> 10
+            | "магистратура" -> 4
+            | "аспирантура" -> 4
+            | _ -> 0
+        
+        for i = 1 to number_of_semesters do
+            if not (Seq.contains i semesters) then
+                warnings <- Seq.append warnings [|i|]
+        
+        warnings
+
+    let codes (curriculum: DocxCurriculum) =
+        curriculum.Disciplines 
+        |> Seq.map (fun s -> s.Code) 
+        |> Seq.filter (fun s -> s.Length <> 6)
 
     let hours (curriculum: DocxCurriculum) =
         let mutable warnings = Seq.empty
@@ -56,22 +86,44 @@ module Warnings =
             printfn "Найдены ошибки в количестве зачетных единиц."
             hours_errors 
             |> Seq.iter (fun a -> match a with (a, b) -> printfn "В семестре %d %d з.е." b a)
-            //failwithf "" Закомментировано до момента решения реализации парсера иностранных языков
+            //exit -1 Закомментировано до момента решения реализации парсера иностранных языков
     
     let competence_check (curriculum: DocxCurriculum) (error_flag: bool) = 
         let comp_errors = competences curriculum 
         if (Seq.isEmpty comp_errors) then
             printfn "Проверка компетенций проведена успешно."
         else
-            printfn "Найдены неиспользованные компетенции:"
+            printfn "Внимание! Найдены неиспользованные компетенции:"
             comp_errors 
             |> Seq.iter (fun a -> printfn "%s" a)
             if error_flag then
-                failwithf "Пожалуйста, исправьте неиспользуемые компетенции.\n"
+                exit -1
+    
+    let level_of_education_semesters_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+        let level_errors = level_of_education_semesters curriculum
+        if (Seq.isEmpty level_errors) then
+            printfn "Проверка уровня обучения проведена успешно." 
+        else
+            printfn "Внимание! Следующие семестры отсутствуют: "
+            level_errors |> Seq.iter (fun sem -> printfn "%d" sem)
+            if error_flag then
+                exit -1
+    
+    let codes_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+        let codes_errors = codes curriculum
+        if (Seq.isEmpty codes_errors) then
+            printfn "Проверка кодов предметов проведена успешно"
+        else
+            printfn "Внимание! Найдены коды, содержащие не 6 цифр:"
+            codes_errors |> Seq.iter (fun a -> printfn "%s" a)
+            if error_flag then
+                exit -1
         
     let all_checks (curriculum: DocxCurriculum) (error_flag: bool) = 
         hours_check curriculum error_flag
         competence_check curriculum error_flag
+        level_of_education_semesters_check curriculum error_flag
+        codes_check curriculum error_flag
 
     let checks (curriculum: DocxCurriculum) (argv: string []) =
         if (Array.contains "-off" argv) then 
