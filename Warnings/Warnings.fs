@@ -1,40 +1,34 @@
-﻿namespace Warnings
+﻿namespace Checks
 
 open CurriculumParser
 
-module Warnings =
+module Checks =
+
+    let count_max_semester (curriculum: DocxCurriculum) =
+        curriculum.Disciplines
+        |> Seq.map (fun d -> d.Implementations)
+        |> Seq.concat
+        |> Seq.map (fun s -> s.Semester)
+        |> Seq.max
+
 
     let hours (curriculum: DocxCurriculum) =
-        let mutable warnings = Seq.empty
+        let max_semester = count_max_semester (curriculum)
 
-        let max_semester =
-            curriculum.Disciplines
-            |> Seq.map (fun d -> d.Implementations)
-            |> Seq.concat
-            |> Seq.map (fun s -> s.Semester)
-            |> Seq.max
-        
         for i = 1 to max_semester do
-            let mutable labor_intesity = 0
+            let mutable labor_intesity = Semester(i, curriculum).LaborIntensity
 
             if i = max_semester then
                 for examination in curriculum.Examinations do
-                    labor_intesity <-
-                        Semester(i, curriculum).LaborIntensity
-                        + examination.LaborIntensity
-            else
-                labor_intesity <- Semester(i, curriculum).LaborIntensity
-            
+                    labor_intesity <- labor_intesity + examination.LaborIntensity
+
             if labor_intesity <> 30 then
-                warnings <- Seq.append warnings [|labor_intesity, i|]
-        
-        warnings
+                printfn "Внимание! Количество зачетных единиц (%d) не совпадает с нормой (30)." labor_intesity
+                printfn "Проверьте семестр %d!" i
+
 
     let competences (curriculum: DocxCurriculum) =
-
-        let available_competences =
-            curriculum.Competences
-            |> Seq.map (fun d -> d.Code)
+        let available_competences = curriculum.Competences |> Seq.map (fun d -> d.Code)
 
         let competences =
             curriculum.Disciplines
@@ -45,49 +39,53 @@ module Warnings =
             |> Seq.map (fun d -> d.Code)
             |> Seq.distinct
 
-        available_competences 
-        |> Seq.except competences
-    
-    let hours_check (curriculum: DocxCurriculum) (error_flag: bool) = 
-        let hours_errors = hours curriculum 
-        if (Seq.isEmpty hours_errors) then
-            printfn "Проверка количества зачетных единиц проведена успешно."
-        else
-            printfn "Найдены ошибки в количестве зачетных единиц."
-            hours_errors 
-            |> Seq.iter (fun a -> match a with (a, b) -> printfn "В семестре %d %d з.е." b a)
-            //failwithf "" Закомментировано до момента решения реализации парсера иностранных языков
-    
-    let competence_check (curriculum: DocxCurriculum) (error_flag: bool) = 
-        let comp_errors = competences curriculum 
-        if (Seq.isEmpty comp_errors) then
-            printfn "Проверка компетенций проведена успешно."
-        else
-            printfn "Найдены неиспользованные компетенции:"
-            comp_errors 
-            |> Seq.iter (fun a -> printfn "%s" a)
-            if error_flag then
-                failwithf "Пожалуйста, исправьте неиспользуемые компетенции.\n"
-        
-    let all_checks (curriculum: DocxCurriculum) (error_flag: bool) = 
-        hours_check curriculum error_flag
-        competence_check curriculum error_flag
+        for comp in available_competences do
+            if not (Seq.contains comp competences) then
+                printfn "Внимание! Неиспользованная компетенция %s!" comp
 
-    let checks (curriculum: DocxCurriculum) (argv: string []) =
-        if (Array.contains "-off" argv) then 
-            printfn "Все проверки для учебного плана отключены."
-        else
-            let mutable error_flag = false
 
-            if (Array.contains "-err" argv) then
-                error_flag <- true
+    let level_of_education (curriculum: DocxCurriculum) =
+        let semesters =
+            curriculum.Disciplines
+            |> Seq.map (fun d -> d.Implementations)
+            |> Seq.concat
+            |> Seq.map (fun i -> i.Semester)
+            |> Seq.distinct
 
-            if (Array.contains "-hours" argv) then
-                hours_check curriculum error_flag
+        let print_warning (semesters: seq<int>) (number: int) =
+            for i = 1 to number do
+                if not (Seq.contains i semesters) then
+                    printfn "Внимание! Не хватает семестра %d!" i
 
-            if (Array.contains "-compet" argv) then
-                competence_check curriculum error_flag
+        let is_level level max_semester =
+            match level, max_semester with
+            | "бакалавриат", 8 -> print_warning semesters 8
+            | "специалитет", 10 -> print_warning semesters 10
+            | "магистратура", 4
+            | "аспирантура", 4 -> print_warning semesters 4
+            | _ -> printfn "Внимание! Неопознанный уровень образования!"
 
-            else 
-                all_checks curriculum error_flag
-            
+        let level = curriculum.Programme.LevelOfEducation.ToLower()
+        let max_semester = count_max_semester (curriculum)
+
+        is_level level max_semester
+
+
+    let check_codes (curriculum: DocxCurriculum) =
+        let disciplines = curriculum.Disciplines
+
+        for discipline in disciplines do
+            if discipline.Code.Length <> 6 then
+                printfn "Внимание! Код дисциплины \"%s\" содержит не 6 цифр!" discipline.RussianName
+
+
+    let all_checks (curriculum: DocxCurriculum) =
+        competences curriculum
+        hours curriculum
+        level_of_education curriculum
+        check_codes curriculum
+
+
+    let checks (curriculum: DocxCurriculum) (argv: string[]) =
+        if not (Array.contains "-off" argv) then
+            all_checks curriculum
