@@ -53,3 +53,4 @@ let correct_code_test () =
 let code_test () =
     let curriculum = DocxCurriculum(System.AppDomain.CurrentDomain.BaseDirectory + "/../../../test_curricula.docx")
     Warnings.codes curriculum |> should equalSeq (seq{"0035672"; "0035743438"; "00390"})
+
