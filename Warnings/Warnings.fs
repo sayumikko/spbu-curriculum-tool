@@ -89,3 +89,4 @@ module Checks =
     let checks (curriculum: DocxCurriculum) (argv: string[]) =
         if not (Array.contains "-off" argv) then
             all_checks curriculum
+

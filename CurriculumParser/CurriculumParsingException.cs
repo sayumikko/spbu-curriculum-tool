@@ -7,7 +7,7 @@ namespace CurriculumParser
     /// Представляет ошибки, которые возникли во время парсинга файла с учебным планом
     /// </summary>
     [Serializable]
-    internal class CurriculumParsingException : Exception
+    public class CurriculumParsingException : Exception
     {
         /// <summary>
         /// Инициализирует новый экземляр класса <name>CurriculumParsingException</name>

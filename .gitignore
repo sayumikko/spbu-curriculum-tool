@@ -8,3 +8,4 @@
 *.settings
 
 .fake
+.vscode/settings.json
