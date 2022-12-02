@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Tests.fs" />
+    <Compile Include="UnitTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CurriculumParser\CurriculumParser.csproj" />
-    <ProjectReference Include="..\Warnings\Warnings.fsproj" />
   </ItemGroup>
 
 </Project>
