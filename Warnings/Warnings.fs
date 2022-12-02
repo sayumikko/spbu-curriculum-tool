@@ -1,4 +1,4 @@
-﻿namespace Warnings
+namespace Warnings
 
 open CurriculumParser
 
@@ -155,4 +155,3 @@ module Warnings =
 
         else 
             all_checks curriculum error_flag output_flag
-            
