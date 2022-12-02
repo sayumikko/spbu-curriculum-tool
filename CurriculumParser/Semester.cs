@@ -1,21 +1,31 @@
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace CurriculumParser
 {
     public class Semester
     {
+        /// <summary>
+        /// Номер семестра
+        /// </summary>
         public int Number { get; private set; }
 
+        /// <summary>
+        /// Список дисциплин, реализуемых в данном семестре
+        /// </summary>
         public List<DisciplineImplementation> Implementations = new List<DisciplineImplementation>();
 
+        /// <summary>
+        /// Трудоемкость всего семестра в зачетных единицах
+        /// </summary>
         public int LaborIntensity { get; private set; }
 
         public Semester(int number, DocxCurriculum docxCurriculum)
         {
             Number = number;
             Implementations = ParseImplementations(docxCurriculum);
-            LaborIntensity = CountLaborIntensity();
+            LaborIntensity = CountLaborIntensity(docxCurriculum);
         }
 
         private List<DisciplineImplementation> ParseImplementations(DocxCurriculum docxCurriculum)
@@ -34,10 +44,19 @@ namespace CurriculumParser
             return implementations;
         }
 
-        private int CountLaborIntensity()
+        private int CountLaborIntensity(DocxCurriculum docxCurriculum)
         {
             int count = 0;
             List<DisciplineImplementation> disciplines = new List<DisciplineImplementation>();
+            List<DisciplinesBlock> disciplinesBlocks = new List<DisciplinesBlock>();
+            foreach (DisciplinesBlock block in docxCurriculum.DisciplinesBlocks)
+            {
+                if (block.Semester == Number)
+                {
+                    disciplinesBlocks.Add(block);
+                }
+            }
+
             var codes = new List<string>();
             var blocks = new List<int>();
             foreach (DisciplineImplementation imp in Implementations)
@@ -47,8 +66,19 @@ namespace CurriculumParser
                 {
                     if (discipline.Type is DisciplineType.Base)
                     {
-                        codes.Add(discipline.Code);
-                        count += imp.LaborIntensity;
+                        foreach (DisciplinesBlock block in disciplinesBlocks)
+                        {
+                            if (!block.Implementations.Contains(imp))
+                            {
+                                codes.Add(discipline.Code);
+                                count += imp.LaborIntensity;
+                            }
+                        }
+                        if (!disciplinesBlocks.Any())
+                        {
+                            codes.Add(discipline.Code);
+                            count += imp.LaborIntensity;
+                        }
                     }
                     if (discipline.ElectivesBlocks.Count > 0)
                     {
@@ -67,6 +97,12 @@ namespace CurriculumParser
                     }
                 }
             }
+
+            foreach (DisciplinesBlock block in disciplinesBlocks)
+            {
+                count += block.Implementations[0].LaborIntensity;
+            }
+
             return count;
         }
     }
