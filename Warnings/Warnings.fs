@@ -78,20 +78,22 @@ module Warnings =
         available_competences 
         |> Seq.except competences
     
-    let hours_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+    let hours_check (curriculum: DocxCurriculum) (error_flag: bool) (output_flag: bool) = 
         let hours_errors = hours curriculum 
         if (Seq.isEmpty hours_errors) then
-            printfn "Проверка количества зачетных единиц проведена успешно."
+            if (output_flag) then
+                printfn "Проверка количества зачетных единиц проведена успешно."
         else
             printfn "Найдены ошибки в количестве зачетных единиц."
             hours_errors 
             |> Seq.iter (fun a -> match a with (a, b) -> printfn "В семестре %d %d з.е." b a)
             //exit -1 Закомментировано до момента решения реализации парсера иностранных языков
     
-    let competence_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+    let competence_check (curriculum: DocxCurriculum) (error_flag: bool) (output_flag: bool) = 
         let comp_errors = competences curriculum 
         if (Seq.isEmpty comp_errors) then
-            printfn "Проверка компетенций проведена успешно."
+            if (output_flag) then
+                printfn "Проверка компетенций проведена успешно."
         else
             printfn "Внимание! Найдены неиспользованные компетенции:"
             comp_errors 
@@ -99,47 +101,58 @@ module Warnings =
             if error_flag then
                 exit -1
     
-    let level_of_education_semesters_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+    let level_of_education_semesters_check (curriculum: DocxCurriculum) (error_flag: bool) (output_flag: bool) = 
         let level_errors = level_of_education_semesters curriculum
         if (Seq.isEmpty level_errors) then
-            printfn "Проверка уровня обучения проведена успешно." 
+            if (output_flag) then
+                printfn "Проверка уровня обучения проведена успешно." 
         else
             printfn "Внимание! Следующие семестры отсутствуют: "
             level_errors |> Seq.iter (fun sem -> printfn "%d" sem)
             if error_flag then
                 exit -1
     
-    let codes_check (curriculum: DocxCurriculum) (error_flag: bool) = 
+    let codes_check (curriculum: DocxCurriculum) (error_flag: bool) (output_flag: bool) = 
         let codes_errors = codes curriculum
         if (Seq.isEmpty codes_errors) then
-            printfn "Проверка кодов предметов проведена успешно"
+            if (output_flag) then
+                printfn "Проверка кодов предметов проведена успешно"
         else
             printfn "Внимание! Найдены коды, содержащие не 6 цифр:"
             codes_errors |> Seq.iter (fun a -> printfn "%s" a)
             if error_flag then
                 exit -1
         
-    let all_checks (curriculum: DocxCurriculum) (error_flag: bool) = 
-        hours_check curriculum error_flag
-        competence_check curriculum error_flag
-        level_of_education_semesters_check curriculum error_flag
-        codes_check curriculum error_flag
+    let all_checks (curriculum: DocxCurriculum) (error_flag: bool) (output_flag: bool) = 
+        hours_check curriculum error_flag output_flag
+        competence_check curriculum error_flag output_flag
+        level_of_education_semesters_check curriculum error_flag output_flag
+        codes_check curriculum error_flag output_flag
 
     let checks (curriculum: DocxCurriculum) (argv: string []) =
+        let mutable error_flag = false
+        let mutable output_flag = true
         if (Array.contains "-off" argv) then 
             printfn "Все проверки для учебного плана отключены."
-        else
-            let mutable error_flag = false
-
+        elif (argv.Length > 1) then
             if (Array.contains "-err" argv) then
                 error_flag <- true
 
+            if (Array.contains "-nsout" argv) then
+                output_flag <- false
+
             if (Array.contains "-hours" argv) then
-                hours_check curriculum error_flag
+                hours_check curriculum error_flag output_flag             
 
             if (Array.contains "-compet" argv) then
-                competence_check curriculum error_flag
+                competence_check curriculum error_flag output_flag
+            
+            if (Array.contains "-lvsem" argv) then
+                level_of_education_semesters_check curriculum error_flag output_flag
 
-            else 
-                all_checks curriculum error_flag
+            if (Array.contains "-code" argv) then
+                codes_check curriculum error_flag output_flag
+
+        else 
+            all_checks curriculum error_flag output_flag
             

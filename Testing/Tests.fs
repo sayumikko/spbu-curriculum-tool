@@ -8,6 +8,7 @@ open Warnings
 [<TestFixture>]
 type MyTests() =
 
+
     [<SetUp>]
     member __.setup() =
         FSharpCustomMessageFormatter() |> ignore
