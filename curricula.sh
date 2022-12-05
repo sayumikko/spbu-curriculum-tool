@@ -16,11 +16,13 @@ execute(){
   for ((i = 0; i < ${#plans[@]}; i++))
   do
     echo "Учебный план ${plans[$i]:3:9}"
-    dotnet run ${plans[$i]:3:9} -err; r=$?
-    echo $r
+    dotnet run ${plans[$i]:3:9} -err -nout; r=$?
+    if (($r != 0)); then
+      return $r
+    fi
+    echo "Проверка завершена успешно."
   done
 }
 
 getfiles
 execute
-

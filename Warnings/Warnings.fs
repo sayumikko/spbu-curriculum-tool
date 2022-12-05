@@ -134,24 +134,33 @@ module Warnings =
         let mutable output_flag = true
         if (Array.contains "-off" argv) then 
             printfn "Все проверки для учебного плана отключены."
-        elif (argv.Length > 1) then
+        elif (argv.Length > 2) then
+            let mutable eval_all_checks = true
+
             if (Array.contains "-err" argv) then
                 error_flag <- true
 
-            if (Array.contains "-nsout" argv) then
+            if (Array.contains "-nout" argv) then
                 output_flag <- false
 
             if (Array.contains "-hours" argv) then
-                hours_check curriculum error_flag output_flag             
+                hours_check curriculum error_flag output_flag
+                eval_all_checks <- false             
 
             if (Array.contains "-compet" argv) then
                 competence_check curriculum error_flag output_flag
+                eval_all_checks <- false 
             
             if (Array.contains "-lvsem" argv) then
                 level_of_education_semesters_check curriculum error_flag output_flag
+                eval_all_checks <- false 
 
             if (Array.contains "-code" argv) then
                 codes_check curriculum error_flag output_flag
+                eval_all_checks <- false 
+            
+            if eval_all_checks then
+                all_checks curriculum error_flag output_flag
 
         else 
             all_checks curriculum error_flag output_flag
