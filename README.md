@@ -1,8 +1,6 @@
 # SPBU curriculum tool
 
 ![GitHub](https://img.shields.io/github/license/sayumikko/spbu-curriculum-tool)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/sayumikko/spbu-curriculum-tool/main)
-![GitHub](https://img.shields.io/github/license/sayumikko/spbu-curriculum-tool)
 
 ## Описание
 
