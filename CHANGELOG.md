@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://www.github.com/sayumikko/spbu-curriculum-tool/releases/tag/v1.1.1) (2022-12-17)
+
+### Bug Fixes
+
+* fixes to test the release action ([f0f9d68](https://www.github.com/sayumikko/spbu-curriculum-tool/commit/f0f9d68bb272fe04432f73cc8e4fead49e1e0474))
+
 <a name="1.1.0"></a>
 ## [1.1.0](https://www.github.com/sayumikko/spbu-curriculum-tool/releases/tag/v1.1.0) (2022-12-17)
 
