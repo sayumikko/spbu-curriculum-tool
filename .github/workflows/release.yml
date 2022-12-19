@@ -8,6 +8,7 @@ on:
     types:
       - closed
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -67,4 +68,3 @@ jobs:
             } catch (error) {
               core.setFailed(error.message);
             }
-            
