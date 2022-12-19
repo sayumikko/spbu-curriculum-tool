@@ -2,7 +2,11 @@ name: Version and Release
 
 on:
   push:
-    branches: [ "Sayumiko's" ]
+    branches: [ "Main" ]
+  pull_request:
+    branches: [ "Main" ]
+    types:
+      - closed
 
 jobs:
   build:
