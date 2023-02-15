@@ -6,3 +6,9 @@
 *.csproj.user
 *.datasource
 *.settings
+
+.fake
+.vscode/settings.json
+.vscode/launch.json
+.config/dotnet-tools.json
+.vscode/tasks.json
