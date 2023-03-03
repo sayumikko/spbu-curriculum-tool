@@ -29,14 +29,19 @@ namespace CurriculumParser
         public List<ElectivesBlock> ElectiveBlocks { get; private set; }
 
         /// <summary>
+        /// Блоки дисциплин
+        /// </summary>
+        public List<DisciplinesBlock> DisciplinesBlocks { get; private set; }
+
+        /// <summary>
         /// Компетенции
         /// </summary>
         public List<Competence> Competences { get; private set; }
 
         /// <summary>
-        /// Типы работ
+        /// Выпускная квалификационная работа
         /// </summary>
-        public List<WorkType> WorkTypes { get; private set; }
+        public List<Examination> Examinations { get; private set; }
 
         /// <summary>
         /// Создает экземляр класса <name>DocxCurriculum</name>
@@ -49,12 +54,15 @@ namespace CurriculumParser
 
             CurriculumCode = DocxCurriculumCodeParser.Parse(body);
             Programme = DocxProgrammeParser.Parse(body);
-            WorkTypes = DocxWorkTypesParser.Parse(body);
             Competences = DocxCompetencesParser.Parse(body);
             ElectiveBlocks = new List<ElectivesBlock>();
+            DisciplinesBlocks = new List<DisciplinesBlock>();
 
-            var disciplinesParser = new DocxDisciplinesParser(body, Competences, Programme, ElectiveBlocks);
+            var disciplinesParser = new DocxDisciplinesParser(body, Competences, Programme, ElectiveBlocks, DisciplinesBlocks);
             Disciplines = disciplinesParser.Parse();
+
+            var examinationsParser = new DocxExaminationParser(body, Competences);
+            Examinations = examinationsParser.Parse();
         }
     }
 }
