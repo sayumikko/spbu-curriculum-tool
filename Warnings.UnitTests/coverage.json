@@ -1,0 +1,4210 @@
+{
+  "Warnings.dll": {
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/Warnings/Warnings.fs": {
+      "Warnings.Warnings": {
+        "System.Collections.Generic.IEnumerable`1<System.Int32> Warnings.Warnings::level_of_education_semesters(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "10": 2,
+            "12": 2,
+            "13": 2,
+            "14": 421,
+            "15": 2,
+            "16": 817,
+            "17": 4,
+            "19": 2,
+            "22": 2,
+            "23": 2,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 18,
+            "30": 87,
+            "31": 1,
+            "33": 2
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 98,
+              "EndOffset": 100,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 112,
+              "EndOffset": 114,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 126,
+              "EndOffset": 128,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 98,
+              "EndOffset": 144,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 112,
+              "EndOffset": 148,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 126,
+              "EndOffset": 153,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 140,
+              "EndOffset": 157,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 140,
+              "EndOffset": 161,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 176,
+              "EndOffset": 181,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 16
+            },
+            {
+              "Line": 29,
+              "Offset": 327,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 16
+            },
+            {
+              "Line": 30,
+              "Offset": 191,
+              "EndOffset": 193,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 191,
+              "EndOffset": 204,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 16
+            },
+            {
+              "Line": 30,
+              "Offset": 219,
+              "EndOffset": 223,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 72
+            },
+            {
+              "Line": 30,
+              "Offset": 219,
+              "EndOffset": 233,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 15
+            },
+            {
+              "Line": 30,
+              "Offset": 235,
+              "EndOffset": 237,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 71
+            },
+            {
+              "Line": 30,
+              "Offset": 235,
+              "EndOffset": 253,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 16
+            },
+            {
+              "Line": 30,
+              "Offset": 287,
+              "EndOffset": 289,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 287,
+              "EndOffset": 314,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 15
+            },
+            {
+              "Line": 29,
+              "Offset": 176,
+              "EndOffset": 332,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 29,
+              "Offset": 327,
+              "EndOffset": 332,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<System.String> Warnings.Warnings::codes(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "36": 2,
+            "37": 138,
+            "38": 138
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.Tuple`2<System.Int32,System.Int32>> Warnings.Warnings::hours(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "41": 1,
+            "43": 1,
+            "44": 1,
+            "45": 72,
+            "46": 1,
+            "47": 124,
+            "48": 124,
+            "50": 9,
+            "51": 8,
+            "53": 8,
+            "54": 3,
+            "57": 7,
+            "59": 8,
+            "60": 0,
+            "62": 1
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 62,
+              "EndOffset": 75,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 92,
+              "EndOffset": 96,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 92,
+              "EndOffset": 112,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 129,
+              "EndOffset": 131,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 122
+            },
+            {
+              "Line": 48,
+              "Offset": 150,
+              "EndOffset": 152,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            },
+            {
+              "Line": 48,
+              "Offset": 150,
+              "EndOffset": 159,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 115
+            },
+            {
+              "Line": 48,
+              "Offset": 129,
+              "EndOffset": 162,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 203,
+              "EndOffset": 208,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 8
+            },
+            {
+              "Line": 50,
+              "Offset": 365,
+              "EndOffset": 208,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 8
+            },
+            {
+              "Line": 53,
+              "Offset": 215,
+              "EndOffset": 217,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 54,
+              "Offset": 241,
+              "EndOffset": 243,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 1
+            },
+            {
+              "Line": 54,
+              "Offset": 241,
+              "EndOffset": 278,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 215,
+              "EndOffset": 297,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 7
+            },
+            {
+              "Line": 59,
+              "Offset": 318,
+              "EndOffset": 320,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 318,
+              "EndOffset": 352,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 8
+            },
+            {
+              "Line": 50,
+              "Offset": 203,
+              "EndOffset": 370,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 365,
+              "EndOffset": 370,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<System.String> Warnings.Warnings::competences(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "66": 67,
+            "68": 2,
+            "69": 2,
+            "70": 138,
+            "71": 2,
+            "72": 227,
+            "73": 2,
+            "74": 919,
+            "75": 4,
+            "77": 4
+          },
+          "Branches": []
+        },
+        "System.Int32 Warnings.Warnings::academic_hours(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "79": 0
+          },
+          "Branches": []
+        },
+        "System.Void Warnings.Warnings::hours_check(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "90": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0
+          },
+          "Branches": [
+            {
+              "Line": 86,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 18,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 86,
+              "Offset": 14,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Warnings.Warnings::competence_check(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "100": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "106": 0,
+            "107": 0,
+            "109": 0,
+            "110": 0
+          },
+          "Branches": [
+            {
+              "Line": 102,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 103,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 103,
+              "Offset": 18,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 102,
+              "Offset": 14,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 70,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Warnings.Warnings::level_of_education_semesters_check(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "113": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "119": 0,
+            "120": 0,
+            "122": 0,
+            "123": 0
+          },
+          "Branches": [
+            {
+              "Line": 115,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 116,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 116,
+              "Offset": 18,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 115,
+              "Offset": 14,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 122,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 122,
+              "Offset": 70,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Warnings.Warnings::codes_check(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "126": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "132": 0,
+            "133": 0,
+            "135": 0,
+            "136": 0
+          },
+          "Branches": [
+            {
+              "Line": 128,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 18,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 128,
+              "Offset": 14,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 135,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 135,
+              "Offset": 70,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Warnings.Warnings::academic_hours_check(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "138": 0
+          },
+          "Branches": []
+        },
+        "System.Void Warnings.Warnings::all_checks(CurriculumParser.DocxCurriculum,System.Boolean,System.Boolean)": {
+          "Lines": {
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0
+          },
+          "Branches": []
+        },
+        "System.Void Warnings.Warnings::checks(CurriculumParser.DocxCurriculum,System.String[])": {
+          "Lines": {
+            "152": 0,
+            "153": 0,
+            "155": 0,
+            "156": 0,
+            "158": 0,
+            "159": 0,
+            "161": 0,
+            "162": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "184": 0,
+            "185": 0,
+            "188": 0
+          },
+          "Branches": [
+            {
+              "Line": 155,
+              "Offset": 9,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 28,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 50,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 50,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 67,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 97,
+              "EndOffset": 99,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 97,
+              "EndOffset": 104,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 118,
+              "EndOffset": 120,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 118,
+              "EndOffset": 131,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 140,
+              "EndOffset": 144,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 140,
+              "EndOffset": 155,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 157,
+              "EndOffset": 159,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 157,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 188,
+              "EndOffset": 190,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 161,
+              "Offset": 188,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 209,
+              "EndOffset": 211,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 209,
+              "EndOffset": 222,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 231,
+              "EndOffset": 235,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 231,
+              "EndOffset": 246,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 248,
+              "EndOffset": 250,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 248,
+              "EndOffset": 277,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 279,
+              "EndOffset": 284,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 297,
+              "EndOffset": 299,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 297,
+              "EndOffset": 310,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 319,
+              "EndOffset": 323,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 319,
+              "EndOffset": 334,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 336,
+              "EndOffset": 338,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 336,
+              "EndOffset": 365,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 371,
+              "EndOffset": 373,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 371,
+              "EndOffset": 387,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 0
+            },
+            {
+              "Line": 164,
+              "Offset": 279,
+              "EndOffset": 390,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 404,
+              "EndOffset": 406,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 404,
+              "EndOffset": 417,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 426,
+              "EndOffset": 430,
+              "Path": 1,
+              "Ordinal": 37,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 426,
+              "EndOffset": 441,
+              "Path": 0,
+              "Ordinal": 36,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 443,
+              "EndOffset": 445,
+              "Path": 0,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 443,
+              "EndOffset": 472,
+              "Path": 1,
+              "Ordinal": 39,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 474,
+              "EndOffset": 479,
+              "Path": 0,
+              "Ordinal": 40,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 492,
+              "EndOffset": 494,
+              "Path": 0,
+              "Ordinal": 42,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 492,
+              "EndOffset": 505,
+              "Path": 1,
+              "Ordinal": 43,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 514,
+              "EndOffset": 518,
+              "Path": 1,
+              "Ordinal": 45,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 514,
+              "EndOffset": 529,
+              "Path": 0,
+              "Ordinal": 44,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 531,
+              "EndOffset": 533,
+              "Path": 0,
+              "Ordinal": 46,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 531,
+              "EndOffset": 560,
+              "Path": 1,
+              "Ordinal": 47,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 566,
+              "EndOffset": 568,
+              "Path": 0,
+              "Ordinal": 48,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 566,
+              "EndOffset": 582,
+              "Path": 1,
+              "Ordinal": 49,
+              "Hits": 0
+            },
+            {
+              "Line": 169,
+              "Offset": 474,
+              "EndOffset": 585,
+              "Path": 1,
+              "Ordinal": 41,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 599,
+              "EndOffset": 601,
+              "Path": 0,
+              "Ordinal": 50,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 599,
+              "EndOffset": 612,
+              "Path": 1,
+              "Ordinal": 51,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 621,
+              "EndOffset": 625,
+              "Path": 1,
+              "Ordinal": 53,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 621,
+              "EndOffset": 636,
+              "Path": 0,
+              "Ordinal": 52,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 638,
+              "EndOffset": 640,
+              "Path": 0,
+              "Ordinal": 54,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 638,
+              "EndOffset": 667,
+              "Path": 1,
+              "Ordinal": 55,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 669,
+              "EndOffset": 674,
+              "Path": 0,
+              "Ordinal": 56,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 687,
+              "EndOffset": 689,
+              "Path": 0,
+              "Ordinal": 58,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 687,
+              "EndOffset": 700,
+              "Path": 1,
+              "Ordinal": 59,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 709,
+              "EndOffset": 713,
+              "Path": 1,
+              "Ordinal": 61,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 709,
+              "EndOffset": 724,
+              "Path": 0,
+              "Ordinal": 60,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 726,
+              "EndOffset": 728,
+              "Path": 0,
+              "Ordinal": 62,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 726,
+              "EndOffset": 755,
+              "Path": 1,
+              "Ordinal": 63,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 761,
+              "EndOffset": 763,
+              "Path": 0,
+              "Ordinal": 64,
+              "Hits": 0
+            },
+            {
+              "Line": 175,
+              "Offset": 761,
+              "EndOffset": 777,
+              "Path": 1,
+              "Ordinal": 65,
+              "Hits": 0
+            },
+            {
+              "Line": 174,
+              "Offset": 669,
+              "EndOffset": 780,
+              "Path": 1,
+              "Ordinal": 57,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 794,
+              "EndOffset": 796,
+              "Path": 0,
+              "Ordinal": 66,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 794,
+              "EndOffset": 807,
+              "Path": 1,
+              "Ordinal": 67,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 816,
+              "EndOffset": 820,
+              "Path": 1,
+              "Ordinal": 69,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 816,
+              "EndOffset": 831,
+              "Path": 0,
+              "Ordinal": 68,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 833,
+              "EndOffset": 835,
+              "Path": 0,
+              "Ordinal": 70,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 833,
+              "EndOffset": 862,
+              "Path": 1,
+              "Ordinal": 71,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 864,
+              "EndOffset": 869,
+              "Path": 0,
+              "Ordinal": 72,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 882,
+              "EndOffset": 884,
+              "Path": 0,
+              "Ordinal": 74,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 882,
+              "EndOffset": 895,
+              "Path": 1,
+              "Ordinal": 75,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 904,
+              "EndOffset": 908,
+              "Path": 1,
+              "Ordinal": 77,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 904,
+              "EndOffset": 919,
+              "Path": 0,
+              "Ordinal": 76,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 921,
+              "EndOffset": 923,
+              "Path": 0,
+              "Ordinal": 78,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 921,
+              "EndOffset": 950,
+              "Path": 1,
+              "Ordinal": 79,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 956,
+              "EndOffset": 958,
+              "Path": 0,
+              "Ordinal": 80,
+              "Hits": 0
+            },
+            {
+              "Line": 180,
+              "Offset": 956,
+              "EndOffset": 972,
+              "Path": 1,
+              "Ordinal": 81,
+              "Hits": 0
+            },
+            {
+              "Line": 179,
+              "Offset": 864,
+              "EndOffset": 975,
+              "Path": 1,
+              "Ordinal": 73,
+              "Hits": 0
+            },
+            {
+              "Line": 184,
+              "Offset": 978,
+              "EndOffset": 980,
+              "Path": 0,
+              "Ordinal": 82,
+              "Hits": 0
+            },
+            {
+              "Line": 184,
+              "Offset": 978,
+              "EndOffset": 989,
+              "Path": 1,
+              "Ordinal": 83,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 9,
+              "EndOffset": 990,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "CurriculumParser.dll": {
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Competence.cs": {
+      "CurriculumParser.Competence": {
+        "System.String CurriculumParser.Competence::get_Code()": {
+          "Lines": {
+            "22": 21568
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Competence::get_Description()": {
+          "Lines": {
+            "27": 220
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.Competence::.ctor(System.String,System.String)": {
+          "Lines": {
+            "13": 220,
+            "14": 220,
+            "15": 220,
+            "16": 220,
+            "17": 220
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/CurriculumParsingException.cs": {
+      "CurriculumParser.CurriculumParsingException": {
+        "System.Void CurriculumParser.CurriculumParsingException::.ctor()": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.CurriculumParsingException::.ctor(System.String)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.CurriculumParsingException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.CurriculumParsingException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Discipline.cs": {
+      "CurriculumParser.Discipline": {
+        "System.String CurriculumParser.Discipline::get_Code()": {
+          "Lines": {
+            "31": 819
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Discipline::get_RussianName()": {
+          "Lines": {
+            "36": 479
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Discipline::get_EnglishName()": {
+          "Lines": {
+            "41": 479
+          },
+          "Branches": []
+        },
+        "CurriculumParser.DisciplineType CurriculumParser.Discipline::get_Type()": {
+          "Lines": {
+            "46": 578
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock> CurriculumParser.Discipline::get_ElectivesBlocks()": {
+          "Lines": {
+            "51": 698
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.DisciplineImplementation> CurriculumParser.Discipline::get_Implementations()": {
+          "Lines": {
+            "56": 2471
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.Discipline::.ctor(System.String,System.String,System.String,CurriculumParser.DisciplineType)": {
+          "Lines": {
+            "17": 479,
+            "18": 479,
+            "19": 479,
+            "20": 479,
+            "21": 479,
+            "22": 479,
+            "24": 479,
+            "25": 479,
+            "26": 479
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/DisciplineImplemntation.cs": {
+      "CurriculumParser.DisciplineImplementation": {
+        "CurriculumParser.Discipline CurriculumParser.DisciplineImplementation::get_Discipline()": {
+          "Lines": {
+            "38": 921
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.DisciplineImplementation::get_Semester()": {
+          "Lines": {
+            "43": 3720
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.DisciplineImplementation::get_LaborIntensity()": {
+          "Lines": {
+            "48": 875
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.DisciplineImplementation::get_Realization()": {
+          "Lines": {
+            "53": 798
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.DisciplineImplementation::get_Trajectory()": {
+          "Lines": {
+            "58": 798
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.DisciplineImplementation::get_MonitoringTypes()": {
+          "Lines": {
+            "63": 798
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.LessonTypeHours> CurriculumParser.DisciplineImplementation::get_LessonTypeHours()": {
+          "Lines": {
+            "68": 798
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.DisciplineImplementation::get_Competences()": {
+          "Lines": {
+            "73": 1023
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.DisciplineImplementation::.ctor(CurriculumParser.Discipline,System.Int32,System.Int32,System.String,System.String,System.String,System.Collections.Generic.List`1<CurriculumParser.LessonTypeHours>,System.Collections.Generic.List`1<CurriculumParser.Competence>)": {
+          "Lines": {
+            "21": 798,
+            "22": 798,
+            "23": 798,
+            "24": 798,
+            "25": 798,
+            "26": 798,
+            "27": 798,
+            "28": 798,
+            "29": 798,
+            "30": 798,
+            "31": 798,
+            "32": 798,
+            "33": 798
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/DisciplinesBlock.cs": {
+      "CurriculumParser.DisciplinesBlock": {
+        "System.String CurriculumParser.DisciplinesBlock::get_Name()": {
+          "Lines": {
+            "24": 25
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.DisciplinesBlock::get_Semester()": {
+          "Lines": {
+            "29": 103
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.DisciplineImplementation> CurriculumParser.DisciplinesBlock::get_Implementations()": {
+          "Lines": {
+            "34": 242
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.DisciplinesBlock::.ctor(System.String,System.Int32)": {
+          "Lines": {
+            "14": 25,
+            "15": 25,
+            "16": 25,
+            "17": 25,
+            "18": 25,
+            "19": 25
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxCompetencesParser.cs": {
+      "CurriculumParser.DocxCompetencesParser": {
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.DocxCompetencesParser::Parse(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "19": 7,
+            "21": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 461,
+            "26": 220,
+            "27": 220,
+            "28": 220,
+            "29": 220,
+            "30": 1108,
+            "31": 224,
+            "32": 1320,
+            "33": 324,
+            "34": 324,
+            "35": 4,
+            "36": 4,
+            "37": 4,
+            "39": 320,
+            "40": 320,
+            "41": 224,
+            "42": 220,
+            "43": 220,
+            "44": 220,
+            "45": 7,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "51": 7
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 356,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 220
+            },
+            {
+              "Line": 30,
+              "Offset": 293,
+              "EndOffset": 153,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 224
+            },
+            {
+              "Line": 32,
+              "Offset": 268,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 324
+            },
+            {
+              "Line": 34,
+              "Offset": 197,
+              "EndOffset": 199,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 324
+            },
+            {
+              "Line": 34,
+              "Offset": 206,
+              "EndOffset": 208,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 320
+            },
+            {
+              "Line": 34,
+              "Offset": 197,
+              "EndOffset": 220,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 34,
+              "Offset": 206,
+              "EndOffset": 220,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 34,
+              "Offset": 225,
+              "EndOffset": 227,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 34,
+              "Offset": 225,
+              "EndOffset": 244,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 320
+            },
+            {
+              "Line": 32,
+              "Offset": 268,
+              "EndOffset": 270,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 224
+            },
+            {
+              "Line": 30,
+              "Offset": 293,
+              "EndOffset": 298,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 220
+            },
+            {
+              "Line": 25,
+              "Offset": 356,
+              "EndOffset": 361,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.ValueTuple`2<System.Int32,System.Int32> CurriculumParser.DocxCompetencesParser::AnalyzeCompetenceTableHeader(DocumentFormat.OpenXml.Wordprocessing.TableRow)": {
+          "Lines": {
+            "54": 7,
+            "55": 21,
+            "56": 21,
+            "57": 21,
+            "59": 7,
+            "60": 7,
+            "61": 7,
+            "63": 7,
+            "64": 7
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 56,
+              "Offset": 21,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            }
+          ]
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxCurriculum.cs": {
+      "CurriculumParser.DocxCurriculum": {
+        "System.String CurriculumParser.DocxCurriculum::get_CurriculumCode()": {
+          "Lines": {
+            "14": 7
+          },
+          "Branches": []
+        },
+        "CurriculumParser.Programme CurriculumParser.DocxCurriculum::get_Programme()": {
+          "Lines": {
+            "19": 16
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Discipline> CurriculumParser.DocxCurriculum::get_Disciplines()": {
+          "Lines": {
+            "24": 22
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock> CurriculumParser.DocxCurriculum::get_ElectiveBlocks()": {
+          "Lines": {
+            "29": 14
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.DisciplinesBlock> CurriculumParser.DocxCurriculum::get_DisciplinesBlocks()": {
+          "Lines": {
+            "34": 22
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.DocxCurriculum::get_Competences()": {
+          "Lines": {
+            "39": 23
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Examination> CurriculumParser.DocxCurriculum::get_Examinations()": {
+          "Lines": {
+            "44": 8
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.DocxCurriculum::.ctor(System.String)": {
+          "Lines": {
+            "50": 7,
+            "51": 7,
+            "52": 7,
+            "53": 7,
+            "55": 7,
+            "56": 7,
+            "57": 7,
+            "58": 7,
+            "59": 7,
+            "61": 7,
+            "62": 7,
+            "64": 7,
+            "65": 7,
+            "66": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxCurriculumCodeParser.cs": {
+      "CurriculumParser.DocxCurriculumCodeParser": {
+        "System.String CurriculumParser.DocxCurriculumCodeParser::Parse(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "19": 7,
+            "21": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 7,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 7
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 55,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            }
+          ]
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxDisciplinesParser.cs": {
+      "CurriculumParser.DocxDisciplinesParser": {
+        "System.Collections.Generic.List`1<CurriculumParser.Discipline> CurriculumParser.DocxDisciplinesParser::Parse()": {
+          "Lines": {
+            "44": 7,
+            "46": 7,
+            "47": 7,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 7
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Discipline> CurriculumParser.DocxDisciplinesParser::ParseDisciplines()": {
+          "Lines": {
+            "56": 7,
+            "57": 7,
+            "58": 7,
+            "59": 7,
+            "60": 7,
+            "62": 7,
+            "63": 7,
+            "65": 7,
+            "66": 7,
+            "67": 7,
+            "69": 7,
+            "71": 7,
+            "72": 7,
+            "73": 2469,
+            "74": 1224,
+            "75": 1224,
+            "76": 423,
+            "77": 423,
+            "78": 423,
+            "80": 423,
+            "81": 423,
+            "82": 117,
+            "83": 117,
+            "84": 117,
+            "85": 306,
+            "86": 53,
+            "87": 53,
+            "88": 53,
+            "89": 53,
+            "90": 22,
+            "91": 22,
+            "92": 22,
+            "93": 53,
+            "94": 253,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 253,
+            "99": 25,
+            "100": 25,
+            "101": 25,
+            "102": 228,
+            "103": 25,
+            "104": 25,
+            "105": 25,
+            "106": 25,
+            "107": 423,
+            "110": 801,
+            "111": 801,
+            "112": 804,
+            "114": 798,
+            "115": 479,
+            "116": 479,
+            "117": 479,
+            "118": 479,
+            "120": 798,
+            "121": 798,
+            "122": 642,
+            "123": 642,
+            "124": 56,
+            "125": 56,
+            "126": 56,
+            "127": 56,
+            "128": 56,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 56,
+            "133": 642,
+            "134": 642,
+            "136": 798,
+            "137": 798,
+            "138": 642,
+            "139": 642,
+            "140": 642,
+            "142": 798,
+            "143": 798,
+            "144": 642,
+            "145": 642,
+            "146": 642,
+            "148": 798,
+            "150": 798,
+            "151": 798,
+            "152": 798,
+            "154": 798,
+            "155": 112,
+            "156": 112,
+            "157": 112,
+            "158": 112,
+            "159": 798,
+            "160": 123,
+            "161": 123,
+            "162": 123,
+            "163": 798,
+            "164": 150,
+            "165": 150,
+            "166": 150,
+            "167": 798,
+            "169": 486,
+            "170": 7
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 943,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 51,
+              "Hits": 1224
+            },
+            {
+              "Line": 75,
+              "Offset": 114,
+              "EndOffset": 119,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 423
+            },
+            {
+              "Line": 81,
+              "Offset": 148,
+              "EndOffset": 150,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 117
+            },
+            {
+              "Line": 81,
+              "Offset": 148,
+              "EndOffset": 160,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 306
+            },
+            {
+              "Line": 85,
+              "Offset": 176,
+              "EndOffset": 178,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 53
+            },
+            {
+              "Line": 89,
+              "Offset": 193,
+              "EndOffset": 195,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 46
+            },
+            {
+              "Line": 89,
+              "Offset": 193,
+              "EndOffset": 209,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 7
+            },
+            {
+              "Line": 89,
+              "Offset": 214,
+              "EndOffset": 216,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 22
+            },
+            {
+              "Line": 89,
+              "Offset": 214,
+              "EndOffset": 232,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 53
+            },
+            {
+              "Line": 85,
+              "Offset": 176,
+              "EndOffset": 238,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 253
+            },
+            {
+              "Line": 94,
+              "Offset": 240,
+              "EndOffset": 242,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 35
+            },
+            {
+              "Line": 94,
+              "Offset": 254,
+              "EndOffset": 256,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 10
+            },
+            {
+              "Line": 94,
+              "Offset": 240,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 243
+            },
+            {
+              "Line": 94,
+              "Offset": 254,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 243
+            },
+            {
+              "Line": 94,
+              "Offset": 278,
+              "EndOffset": 280,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 278,
+              "EndOffset": 294,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 253
+            },
+            {
+              "Line": 98,
+              "Offset": 310,
+              "EndOffset": 312,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 25
+            },
+            {
+              "Line": 98,
+              "Offset": 310,
+              "EndOffset": 319,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 228
+            },
+            {
+              "Line": 102,
+              "Offset": 322,
+              "EndOffset": 324,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 203
+            },
+            {
+              "Line": 102,
+              "Offset": 322,
+              "EndOffset": 338,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 25
+            },
+            {
+              "Line": 102,
+              "Offset": 343,
+              "EndOffset": 345,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 25
+            },
+            {
+              "Line": 75,
+              "Offset": 114,
+              "EndOffset": 381,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 801
+            },
+            {
+              "Line": 112,
+              "Offset": 452,
+              "EndOffset": 459,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 798
+            },
+            {
+              "Line": 114,
+              "Offset": 479,
+              "EndOffset": 481,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 479
+            },
+            {
+              "Line": 114,
+              "Offset": 479,
+              "EndOffset": 513,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 798
+            },
+            {
+              "Line": 121,
+              "Offset": 530,
+              "EndOffset": 532,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 121,
+              "Offset": 530,
+              "EndOffset": 535,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 798
+            },
+            {
+              "Line": 121,
+              "Offset": 554,
+              "EndOffset": 556,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 642
+            },
+            {
+              "Line": 123,
+              "Offset": 565,
+              "EndOffset": 567,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 56
+            },
+            {
+              "Line": 128,
+              "Offset": 604,
+              "EndOffset": 606,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 128,
+              "Offset": 604,
+              "EndOffset": 622,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 56
+            },
+            {
+              "Line": 123,
+              "Offset": 565,
+              "EndOffset": 623,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 642
+            },
+            {
+              "Line": 121,
+              "Offset": 554,
+              "EndOffset": 634,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 798
+            },
+            {
+              "Line": 137,
+              "Offset": 651,
+              "EndOffset": 653,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 137,
+              "Offset": 651,
+              "EndOffset": 656,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 798
+            },
+            {
+              "Line": 137,
+              "Offset": 675,
+              "EndOffset": 677,
+              "Path": 0,
+              "Ordinal": 36,
+              "Hits": 642
+            },
+            {
+              "Line": 137,
+              "Offset": 675,
+              "EndOffset": 693,
+              "Path": 1,
+              "Ordinal": 37,
+              "Hits": 798
+            },
+            {
+              "Line": 143,
+              "Offset": 710,
+              "EndOffset": 712,
+              "Path": 0,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 710,
+              "EndOffset": 715,
+              "Path": 1,
+              "Ordinal": 39,
+              "Hits": 798
+            },
+            {
+              "Line": 143,
+              "Offset": 734,
+              "EndOffset": 736,
+              "Path": 0,
+              "Ordinal": 40,
+              "Hits": 642
+            },
+            {
+              "Line": 143,
+              "Offset": 734,
+              "EndOffset": 747,
+              "Path": 1,
+              "Ordinal": 41,
+              "Hits": 798
+            },
+            {
+              "Line": 154,
+              "Offset": 824,
+              "EndOffset": 826,
+              "Path": 0,
+              "Ordinal": 42,
+              "Hits": 112
+            },
+            {
+              "Line": 154,
+              "Offset": 824,
+              "EndOffset": 885,
+              "Path": 1,
+              "Ordinal": 43,
+              "Hits": 798
+            },
+            {
+              "Line": 159,
+              "Offset": 887,
+              "EndOffset": 889,
+              "Path": 0,
+              "Ordinal": 44,
+              "Hits": 686
+            },
+            {
+              "Line": 159,
+              "Offset": 887,
+              "EndOffset": 895,
+              "Path": 1,
+              "Ordinal": 45,
+              "Hits": 112
+            },
+            {
+              "Line": 159,
+              "Offset": 900,
+              "EndOffset": 902,
+              "Path": 0,
+              "Ordinal": 46,
+              "Hits": 123
+            },
+            {
+              "Line": 159,
+              "Offset": 900,
+              "EndOffset": 907,
+              "Path": 1,
+              "Ordinal": 47,
+              "Hits": 798
+            },
+            {
+              "Line": 163,
+              "Offset": 916,
+              "EndOffset": 918,
+              "Path": 0,
+              "Ordinal": 48,
+              "Hits": 150
+            },
+            {
+              "Line": 163,
+              "Offset": 916,
+              "EndOffset": 935,
+              "Path": 1,
+              "Ordinal": 49,
+              "Hits": 798
+            },
+            {
+              "Line": 102,
+              "Offset": 343,
+              "EndOffset": 936,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 1231
+            },
+            {
+              "Line": 112,
+              "Offset": 452,
+              "EndOffset": 936,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 1231
+            },
+            {
+              "Line": 73,
+              "Offset": 943,
+              "EndOffset": 948,
+              "Path": 0,
+              "Ordinal": 50,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Int32 CurriculumParser.DocxDisciplinesParser::ParseSemesterNumber(System.String)": {
+          "Lines": {
+            "173": 53
+          },
+          "Branches": []
+        },
+        "System.Boolean CurriculumParser.DocxDisciplinesParser::TryParseDisciplineType(System.String,CurriculumParser.DisciplineType&)": {
+          "Lines": {
+            "176": 423,
+            "177": 423,
+            "180": 53,
+            "181": 53,
+            "183": 53,
+            "184": 53,
+            "186": 11,
+            "187": 11,
+            "189": 306,
+            "190": 306,
+            "191": 423
+          },
+          "Branches": [
+            {
+              "Line": 177,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 370
+            },
+            {
+              "Line": 177,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 317
+            },
+            {
+              "Line": 177,
+              "Offset": 21,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 53
+            },
+            {
+              "Line": 177,
+              "Offset": 34,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 53
+            },
+            {
+              "Line": 177,
+              "Offset": 47,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 11
+            },
+            {
+              "Line": 177,
+              "Offset": 47,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 306
+            }
+          ]
+        },
+        "CurriculumParser.Specialization CurriculumParser.DocxDisciplinesParser::GetSpecialization(System.String)": {
+          "Lines": {
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "200": 0,
+            "201": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0
+          },
+          "Branches": [
+            {
+              "Line": 196,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 196,
+              "Offset": 32,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 204,
+              "Offset": 126,
+              "EndOffset": 128,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 204,
+              "Offset": 126,
+              "EndOffset": 155,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.ValueTuple`5<System.String,System.String,System.String,System.String,System.String> CurriculumParser.DocxDisciplinesParser::ParseDisciplineNameCodeRealization(DocumentFormat.OpenXml.Wordprocessing.TableCell)": {
+          "Lines": {
+            "213": 801,
+            "214": 801,
+            "215": 801,
+            "216": 801,
+            "217": 801,
+            "218": 7747,
+            "219": 2672,
+            "220": 20970,
+            "221": 6477,
+            "222": 6477,
+            "223": 798,
+            "224": 798,
+            "225": 798,
+            "227": 5679,
+            "228": 838,
+            "229": 838,
+            "230": 838,
+            "232": 4841,
+            "233": 4841,
+            "234": 2672,
+            "236": 801,
+            "237": 801,
+            "238": 798,
+            "239": 798,
+            "240": 798,
+            "241": 798,
+            "242": 798,
+            "243": 798,
+            "244": 798,
+            "245": 795,
+            "246": 795,
+            "247": 795,
+            "248": 798,
+            "250": 3,
+            "251": 801
+          },
+          "Branches": [
+            {
+              "Line": 218,
+              "Offset": 172,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2672
+            },
+            {
+              "Line": 220,
+              "Offset": 147,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6477
+            },
+            {
+              "Line": 222,
+              "Offset": 94,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 798
+            },
+            {
+              "Line": 222,
+              "Offset": 94,
+              "EndOffset": 101,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5679
+            },
+            {
+              "Line": 227,
+              "Offset": 106,
+              "EndOffset": 108,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 838
+            },
+            {
+              "Line": 227,
+              "Offset": 106,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4841
+            },
+            {
+              "Line": 220,
+              "Offset": 147,
+              "EndOffset": 149,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2672
+            },
+            {
+              "Line": 218,
+              "Offset": 172,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 801
+            },
+            {
+              "Line": 237,
+              "Offset": 216,
+              "EndOffset": 221,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 798
+            },
+            {
+              "Line": 241,
+              "Offset": 295,
+              "EndOffset": 297,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 413
+            },
+            {
+              "Line": 241,
+              "Offset": 295,
+              "EndOffset": 322,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 385
+            },
+            {
+              "Line": 242,
+              "Offset": 353,
+              "EndOffset": 355,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 286
+            },
+            {
+              "Line": 242,
+              "Offset": 353,
+              "EndOffset": 380,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 512
+            },
+            {
+              "Line": 244,
+              "Offset": 407,
+              "EndOffset": 409,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 795
+            },
+            {
+              "Line": 244,
+              "Offset": 407,
+              "EndOffset": 424,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 798
+            },
+            {
+              "Line": 237,
+              "Offset": 216,
+              "EndOffset": 442,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.DocxDisciplinesParser::ParseDisciplineCompetences(DocumentFormat.OpenXml.Wordprocessing.TableCell)": {
+          "Lines": {
+            "254": 642,
+            "255": 642,
+            "256": 20790,
+            "257": 642
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.LessonTypeHours> CurriculumParser.DocxDisciplinesParser::ParseDisciplineWorkHours(DocumentFormat.OpenXml.Wordprocessing.TableRow)": {
+          "Lines": {
+            "260": 798,
+            "261": 12768,
+            "262": 798,
+            "263": 798
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.DocxDisciplinesParser::.ctor(DocumentFormat.OpenXml.Wordprocessing.Body,System.Collections.Generic.List`1<CurriculumParser.Competence>,CurriculumParser.Programme,System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock>,System.Collections.Generic.List`1<CurriculumParser.DisciplinesBlock>)": {
+          "Lines": {
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "33": 7,
+            "34": 7,
+            "35": 7,
+            "36": 7,
+            "37": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxExaminationParser.cs": {
+      "CurriculumParser.DocxExaminationParser": {
+        "System.Collections.Generic.List`1<CurriculumParser.Examination> CurriculumParser.DocxExaminationParser::Parse()": {
+          "Lines": {
+            "24": 7,
+            "25": 7,
+            "26": 7,
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "32": 77,
+            "33": 28,
+            "34": 49,
+            "36": 7,
+            "37": 7,
+            "39": 7,
+            "40": 7,
+            "41": 7,
+            "42": 7,
+            "43": 7,
+            "45": 7,
+            "46": 7,
+            "47": 7,
+            "48": 7,
+            "49": 7,
+            "51": 7,
+            "52": 7,
+            "53": 7,
+            "55": 7,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 7
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 280,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 28
+            },
+            {
+              "Line": 34,
+              "Offset": 93,
+              "EndOffset": 100,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 40,
+              "Offset": 155,
+              "EndOffset": 157,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 155,
+              "EndOffset": 160,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            },
+            {
+              "Line": 40,
+              "Offset": 179,
+              "EndOffset": 181,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 7
+            },
+            {
+              "Line": 40,
+              "Offset": 179,
+              "EndOffset": 192,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            },
+            {
+              "Line": 46,
+              "Offset": 209,
+              "EndOffset": 211,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 209,
+              "EndOffset": 214,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 7
+            },
+            {
+              "Line": 46,
+              "Offset": 233,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 7
+            },
+            {
+              "Line": 46,
+              "Offset": 233,
+              "EndOffset": 250,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 7
+            },
+            {
+              "Line": 34,
+              "Offset": 93,
+              "EndOffset": 273,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 35
+            },
+            {
+              "Line": 32,
+              "Offset": 280,
+              "EndOffset": 285,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Boolean CurriculumParser.DocxExaminationParser::TryParseDisciplineType(System.String,CurriculumParser.DisciplineType&)": {
+          "Lines": {
+            "64": 0,
+            "65": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 21,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 34,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 34,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.ValueTuple`2<System.String,System.String> CurriculumParser.DocxExaminationParser::ParseName(DocumentFormat.OpenXml.Wordprocessing.TableCell)": {
+          "Lines": {
+            "79": 7,
+            "80": 7,
+            "81": 7,
+            "82": 7,
+            "83": 7,
+            "84": 43,
+            "85": 11,
+            "86": 97,
+            "87": 32,
+            "88": 32,
+            "89": 7,
+            "90": 7,
+            "91": 7,
+            "93": 25,
+            "94": 7,
+            "95": 7,
+            "96": 7,
+            "98": 18,
+            "99": 18,
+            "100": 11,
+            "102": 7,
+            "103": 7,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "113": 7,
+            "114": 7
+          },
+          "Branches": [
+            {
+              "Line": 84,
+              "Offset": 172,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 11
+            },
+            {
+              "Line": 86,
+              "Offset": 147,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 32
+            },
+            {
+              "Line": 88,
+              "Offset": 94,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 88,
+              "Offset": 94,
+              "EndOffset": 101,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 25
+            },
+            {
+              "Line": 93,
+              "Offset": 106,
+              "EndOffset": 108,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 93,
+              "Offset": 106,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 18
+            },
+            {
+              "Line": 86,
+              "Offset": 147,
+              "EndOffset": 149,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 11
+            },
+            {
+              "Line": 84,
+              "Offset": 172,
+              "EndOffset": 177,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            },
+            {
+              "Line": 103,
+              "Offset": 216,
+              "EndOffset": 218,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 268,
+              "EndOffset": 270,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 268,
+              "EndOffset": 285,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 103,
+              "Offset": 216,
+              "EndOffset": 297,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.DocxExaminationParser::ParseDisciplineCompetences(DocumentFormat.OpenXml.Wordprocessing.TableCell)": {
+          "Lines": {
+            "117": 7,
+            "118": 7,
+            "119": 227,
+            "120": 7
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.DocxExaminationParser::.ctor(DocumentFormat.OpenXml.Wordprocessing.Body,System.Collections.Generic.List`1<CurriculumParser.Competence>)": {
+          "Lines": {
+            "17": 7,
+            "18": 7,
+            "19": 7,
+            "20": 7,
+            "21": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxLessonTypeHoursParser.cs": {
+      "CurriculumParser.DocxLessonTypeHoursParser": {
+        "System.Collections.Generic.List`1<CurriculumParser.LessonTypeHours> CurriculumParser.DocxLessonTypeHoursParser::ParseLessonTypeHours(System.Collections.Generic.List`1<System.String>)": {
+          "Lines": {
+            "24": 798,
+            "25": 798,
+            "26": 0,
+            "27": 0,
+            "30": 798,
+            "31": 25536,
+            "32": 11970,
+            "33": 11970,
+            "34": 11970,
+            "35": 11970,
+            "36": 11970,
+            "37": 11970,
+            "39": 11970,
+            "40": 11970,
+            "42": 798,
+            "43": 798
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 16,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 798
+            },
+            {
+              "Line": 31,
+              "Offset": 108,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 11970
+            },
+            {
+              "Line": 33,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 11172
+            },
+            {
+              "Line": 33,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3990
+            },
+            {
+              "Line": 33,
+              "Offset": 49,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7182
+            },
+            {
+              "Line": 33,
+              "Offset": 44,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 798
+            },
+            {
+              "Line": 31,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 798
+            }
+          ]
+        },
+        "System.Void CurriculumParser.DocxLessonTypeHoursParser::.cctor()": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Docx Curriculum/DocxProgrammeParser.cs": {
+      "CurriculumParser.DocxProgrammeParser": {
+        "CurriculumParser.Programme CurriculumParser.DocxProgrammeParser::Parse(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "20": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 7,
+            "26": 7,
+            "28": 7,
+            "29": 7,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 7
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.DocxProgrammeParser::ParseCode(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "38": 7,
+            "39": 7,
+            "40": 7,
+            "41": 7,
+            "42": 7,
+            "44": 7,
+            "45": 7
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 62,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.String CurriculumParser.DocxProgrammeParser::ParseLevelOdEducation(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "48": 7,
+            "49": 7,
+            "50": 7,
+            "51": 7,
+            "53": 7,
+            "54": 7
+          },
+          "Branches": []
+        },
+        "System.ValueTuple`2<System.String,System.String> CurriculumParser.DocxProgrammeParser::ParseName(DocumentFormat.OpenXml.Wordprocessing.Body)": {
+          "Lines": {
+            "57": 7,
+            "58": 7,
+            "59": 7,
+            "61": 7,
+            "62": 7,
+            "63": 7,
+            "65": 7,
+            "66": 7,
+            "67": 85,
+            "68": 32,
+            "69": 230,
+            "70": 67,
+            "71": 67,
+            "72": 7,
+            "73": 7,
+            "74": 7,
+            "76": 60,
+            "77": 42,
+            "78": 42,
+            "79": 42,
+            "81": 18,
+            "82": 18,
+            "83": 32,
+            "85": 7,
+            "86": 7
+          },
+          "Branches": [
+            {
+              "Line": 67,
+              "Offset": 210,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 32
+            },
+            {
+              "Line": 69,
+              "Offset": 185,
+              "EndOffset": 99,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 67
+            },
+            {
+              "Line": 71,
+              "Offset": 130,
+              "EndOffset": 132,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 71,
+              "Offset": 130,
+              "EndOffset": 138,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 60
+            },
+            {
+              "Line": 76,
+              "Offset": 144,
+              "EndOffset": 146,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 42
+            },
+            {
+              "Line": 76,
+              "Offset": 144,
+              "EndOffset": 163,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 18
+            },
+            {
+              "Line": 69,
+              "Offset": 185,
+              "EndOffset": 187,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 32
+            },
+            {
+              "Line": 67,
+              "Offset": 210,
+              "EndOffset": 215,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            }
+          ]
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/ElectivesBlock.cs": {
+      "CurriculumParser.ElectivesBlock": {
+        "System.Int32 CurriculumParser.ElectivesBlock::get_Semester()": {
+          "Lines": {
+            "27": 64
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.ElectivesBlock::get_Number()": {
+          "Lines": {
+            "32": 72
+          },
+          "Branches": []
+        },
+        "CurriculumParser.Specialization CurriculumParser.ElectivesBlock::get_Specialization()": {
+          "Lines": {
+            "37": 56
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.ValueTuple`2<CurriculumParser.Discipline,CurriculumParser.DisciplineImplementation>> CurriculumParser.ElectivesBlock::get_Disciplines()": {
+          "Lines": {
+            "42": 176
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.ElectivesBlock::.ctor(System.Int32,System.Int32,CurriculumParser.Specialization)": {
+          "Lines": {
+            "16": 56,
+            "17": 56,
+            "18": 56,
+            "19": 56,
+            "20": 56,
+            "21": 56,
+            "22": 56
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Examination.cs": {
+      "CurriculumParser.Examination": {
+        "System.String CurriculumParser.Examination::get_RussianName()": {
+          "Lines": {
+            "13": 7
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Examination::get_EnglishName()": {
+          "Lines": {
+            "18": 7
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.Examination::get_LaborIntensity()": {
+          "Lines": {
+            "23": 8
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Competence> CurriculumParser.Examination::get_Competences()": {
+          "Lines": {
+            "28": 7
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.Examination::.ctor(System.String,System.String,System.Int32,System.Collections.Generic.List`1<CurriculumParser.Competence>)": {
+          "Lines": {
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "33": 7,
+            "34": 7,
+            "35": 7,
+            "36": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/LessonTypeHours.cs": {
+      "CurriculumParser.LessonTypeHours": {
+        "System.String CurriculumParser.LessonTypeHours::get_Hours()": {
+          "Lines": {
+            "19": 11970
+          },
+          "Branches": []
+        },
+        "CurriculumParser.LessonType CurriculumParser.LessonTypeHours::get_Type()": {
+          "Lines": {
+            "24": 11970
+          },
+          "Branches": []
+        },
+        "CurriculumParser.LessonOrganizationType CurriculumParser.LessonTypeHours::get_OrganizationType()": {
+          "Lines": {
+            "29": 11970
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.LessonTypeHours::.ctor(System.String,CurriculumParser.LessonType,CurriculumParser.LessonOrganizationType)": {
+          "Lines": {
+            "8": 11970,
+            "9": 11970,
+            "10": 11970,
+            "11": 11970,
+            "12": 11970,
+            "13": 11970,
+            "14": 11970
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Programme.cs": {
+      "CurriculumParser.Programme": {
+        "System.String CurriculumParser.Programme::get_Code()": {
+          "Lines": {
+            "32": 7
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Programme::get_RussianName()": {
+          "Lines": {
+            "37": 7
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Programme::get_EnglishName()": {
+          "Lines": {
+            "42": 7
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Programme::get_LevelOfEducation()": {
+          "Lines": {
+            "47": 9
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Specialization> CurriculumParser.Programme::get_Specializations()": {
+          "Lines": {
+            "52": 7
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.Programme::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List`1<CurriculumParser.Specialization>)": {
+          "Lines": {
+            "18": 7,
+            "19": 7,
+            "20": 7,
+            "21": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 7,
+            "26": 7,
+            "27": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Semester.cs": {
+      "CurriculumParser.Semester": {
+        "System.Int32 CurriculumParser.Semester::get_Number()": {
+          "Lines": {
+            "12": 1048
+          },
+          "Branches": []
+        },
+        "System.Int32 CurriculumParser.Semester::get_LaborIntensity()": {
+          "Lines": {
+            "22": 16
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.DisciplineImplementation> CurriculumParser.Semester::ParseImplementations(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "32": 8,
+            "33": 8,
+            "34": 8,
+            "35": 1160,
+            "36": 568,
+            "37": 3672,
+            "38": 984,
+            "39": 984,
+            "40": 984,
+            "41": 123,
+            "42": 984,
+            "43": 568,
+            "44": 8,
+            "45": 8
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 133,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 568
+            },
+            {
+              "Line": 37,
+              "Offset": 106,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 984
+            },
+            {
+              "Line": 40,
+              "Offset": 87,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 123
+            },
+            {
+              "Line": 40,
+              "Offset": 87,
+              "EndOffset": 98,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 984
+            },
+            {
+              "Line": 37,
+              "Offset": 106,
+              "EndOffset": 108,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 568
+            },
+            {
+              "Line": 35,
+              "Offset": 133,
+              "EndOffset": 135,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Int32 CurriculumParser.Semester::CountLaborIntensity(CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "48": 8,
+            "49": 8,
+            "50": 8,
+            "51": 8,
+            "52": 88,
+            "53": 32,
+            "54": 32,
+            "55": 4,
+            "56": 4,
+            "57": 4,
+            "58": 32,
+            "60": 8,
+            "61": 8,
+            "62": 270,
+            "63": 123,
+            "64": 123,
+            "65": 123,
+            "66": 99,
+            "67": 99,
+            "68": 89,
+            "69": 393,
+            "70": 63,
+            "71": 63,
+            "72": 39,
+            "73": 39,
+            "74": 39,
+            "75": 39,
+            "76": 63,
+            "77": 89,
+            "78": 26,
+            "79": 26,
+            "80": 26,
+            "81": 26,
+            "82": 89,
+            "83": 99,
+            "84": 8,
+            "85": 40,
+            "86": 16,
+            "87": 8,
+            "88": 8,
+            "89": 8,
+            "90": 8,
+            "91": 8,
+            "92": 56,
+            "93": 24,
+            "94": 16,
+            "95": 8,
+            "96": 8,
+            "97": 8,
+            "98": 99,
+            "99": 123,
+            "101": 32,
+            "102": 4,
+            "103": 4,
+            "104": 4,
+            "106": 8,
+            "107": 8
+          },
+          "Branches": [
+            {
+              "Line": 52,
+              "Offset": 81,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 32
+            },
+            {
+              "Line": 54,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 54,
+              "Offset": 60,
+              "EndOffset": 73,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 32
+            },
+            {
+              "Line": 52,
+              "Offset": 81,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 8
+            },
+            {
+              "Line": 62,
+              "Offset": 582,
+              "EndOffset": 132,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 123
+            },
+            {
+              "Line": 65,
+              "Offset": 171,
+              "EndOffset": 176,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 99
+            },
+            {
+              "Line": 67,
+              "Offset": 191,
+              "EndOffset": 196,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 89
+            },
+            {
+              "Line": 69,
+              "Offset": 275,
+              "EndOffset": 208,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 63
+            },
+            {
+              "Line": 71,
+              "Offset": 239,
+              "EndOffset": 241,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 39
+            },
+            {
+              "Line": 71,
+              "Offset": 239,
+              "EndOffset": 267,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 63
+            },
+            {
+              "Line": 69,
+              "Offset": 275,
+              "EndOffset": 277,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 89
+            },
+            {
+              "Line": 77,
+              "Offset": 307,
+              "EndOffset": 309,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 26
+            },
+            {
+              "Line": 77,
+              "Offset": 307,
+              "EndOffset": 335,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 89
+            },
+            {
+              "Line": 67,
+              "Offset": 191,
+              "EndOffset": 336,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 99
+            },
+            {
+              "Line": 83,
+              "Offset": 355,
+              "EndOffset": 360,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 8
+            },
+            {
+              "Line": 85,
+              "Offset": 552,
+              "EndOffset": 398,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 8
+            },
+            {
+              "Line": 88,
+              "Offset": 429,
+              "EndOffset": 431,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 8
+            },
+            {
+              "Line": 92,
+              "Offset": 526,
+              "EndOffset": 491,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 16
+            },
+            {
+              "Line": 92,
+              "Offset": 526,
+              "EndOffset": 528,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 8
+            },
+            {
+              "Line": 88,
+              "Offset": 429,
+              "EndOffset": 544,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 8
+            },
+            {
+              "Line": 85,
+              "Offset": 552,
+              "EndOffset": 557,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 8
+            },
+            {
+              "Line": 83,
+              "Offset": 355,
+              "EndOffset": 573,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 99
+            },
+            {
+              "Line": 65,
+              "Offset": 171,
+              "EndOffset": 574,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 123
+            },
+            {
+              "Line": 62,
+              "Offset": 582,
+              "EndOffset": 587,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 8
+            },
+            {
+              "Line": 101,
+              "Offset": 654,
+              "EndOffset": 615,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 4
+            },
+            {
+              "Line": 101,
+              "Offset": 654,
+              "EndOffset": 656,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Void CurriculumParser.Semester::.ctor(System.Int32,CurriculumParser.DocxCurriculum)": {
+          "Lines": {
+            "17": 8,
+            "24": 8,
+            "25": 8,
+            "26": 8,
+            "27": 8,
+            "28": 8,
+            "29": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Specialization.cs": {
+      "CurriculumParser.Specialization": {
+        "System.String CurriculumParser.Specialization::get_Number()": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.String CurriculumParser.Specialization::get_Name()": {
+          "Lines": {
+            "32": 0
+          },
+          "Branches": []
+        },
+        "CurriculumParser.Programme CurriculumParser.Specialization::get_Programme()": {
+          "Lines": {
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock> CurriculumParser.Specialization::get_ElectivesBlocks()": {
+          "Lines": {
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.Specialization::.ctor(System.String,System.String,CurriculumParser.Programme)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Txt Curriculum/TxtCurriculum.cs": {
+      "CurriculumParser.TxtCurriculum": {
+        "System.String CurriculumParser.TxtCurriculum::get_CurriculumCode()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "CurriculumParser.Programme CurriculumParser.TxtCurriculum::get_Programme()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.Discipline> CurriculumParser.TxtCurriculum::get_Disciplines()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock> CurriculumParser.TxtCurriculum::get_ElectiveBlocks()": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void CurriculumParser.TxtCurriculum::.ctor(System.String)": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/sayumiko/p/fsharp/spbu-curriculum-tool/CurriculumParser/Txt Curriculum/TxtCurriculumParser.cs": {
+      "CurriculumParser.TxtCurriculumParser": {
+        "CurriculumParser.DisciplineType CurriculumParser.TxtCurriculumParser::ParseDisciplineType(System.String)": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 23,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 36,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 49,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 49,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String CurriculumParser.TxtCurriculumParser::GetNextLine()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 12,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.ValueTuple`4<System.String,CurriculumParser.Programme,System.Collections.Generic.List`1<CurriculumParser.Discipline>,System.Collections.Generic.List`1<CurriculumParser.ElectivesBlock>> CurriculumParser.TxtCurriculumParser::Parse()": {
+          "Lines": {
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "79": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "109": 0
+          },
+          "Branches": [
+            {
+              "Line": 59,
+              "Offset": 192,
+              "EndOffset": 129,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 622,
+              "EndOffset": 199,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 598,
+              "EndOffset": 213,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 233,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 233,
+              "EndOffset": 261,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 342,
+              "EndOffset": 344,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 342,
+              "EndOffset": 376,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 549,
+              "EndOffset": 389,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 425,
+              "EndOffset": 427,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 425,
+              "EndOffset": 464,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 530,
+              "EndOffset": 532,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 530,
+              "EndOffset": 544,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 549,
+              "EndOffset": 554,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 574,
+              "EndOffset": 576,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 574,
+              "EndOffset": 593,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 598,
+              "EndOffset": 603,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 192,
+              "EndOffset": 604,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 622,
+              "EndOffset": 627,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void CurriculumParser.TxtCurriculumParser::.ctor(System.String)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

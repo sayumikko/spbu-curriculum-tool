@@ -6,7 +6,6 @@
 *.csproj.user
 *.datasource
 *.settings
-coverage.json
 
 .fake
 .vscode/settings.json
