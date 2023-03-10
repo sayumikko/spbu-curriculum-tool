@@ -20,9 +20,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Curriculum test
-      run: cd CurriculumParser.UnitTests && dotnet test /p:CollectCoverage=true 
+      run: cd CurriculumParser.UnitTests && dotnet test /p:CollectCoverage=true && cd ..
     - name: Warnings test
-      run: cd ~/Warnings.UnitTests && dotnet test /p:CollectCoverage=true 
+      run: cd Warnings.UnitTests && dotnet test /p:CollectCoverage=true 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
