@@ -3,6 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/sayumikko/spbu-curriculum-tool)
 ![GitHub](https://github.com/sayumikko/spbu-curriculum-tool/actions/workflows/artifact.yml/badge.svg)
 ![GitHub](https://github.com/sayumikko/spbu-curriculum-tool/actions/workflows/tests.yml/badge.svg)
+[![codecov](https://codecov.io/gh/sayumikko/spbu-curriculum-tool/branch/pr/add_ci/graph/badge.svg?token=M2GKY4RZE9)](https://codecov.io/gh/sayumikko/spbu-curriculum-tool)
 
 ## Описание
 
