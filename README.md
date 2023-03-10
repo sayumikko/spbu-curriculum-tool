@@ -1,6 +1,8 @@
 # SPBU curriculum tool
 
 ![GitHub](https://img.shields.io/github/license/sayumikko/spbu-curriculum-tool)
+![GitHub](https://github.com/sayumikko/spbu-curriculum-tool/actions/workflows/artifact.yml/badge.svg)
+![GitHub](https://github.com/sayumikko/spbu-curriculum-tool/actions/workflows/tests.yml/badge.svg)
 
 ## Описание
 

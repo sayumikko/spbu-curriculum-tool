@@ -1,4 +1,4 @@
-name: curriculum test
+name: Check curricula
 
 on:
   push:
