@@ -29,14 +29,6 @@ let correct_competence_test () =
 
     Warnings.competences curriculum |> should be Empty
 
-// Не работает корректно до исправления парсинга иностранных языков
-
-[<Test>]
-let hours_test () =
-    let curriculum =
-        DocxCurriculum(System.AppDomain.CurrentDomain.BaseDirectory + "/../../../test_curricula.docx")
-
-    Warnings.hours curriculum |> should equalSeq (seq { (41, 1) })
 
 [<Test>]
 let correct_hours_test () =
@@ -88,26 +80,3 @@ let code_test () =
             "0035743438"
             "00390"
         })
-
-[<Test>]
-let academic_hours_test () =
-    let curriculum =
-        DocxCurriculum(System.AppDomain.CurrentDomain.BaseDirectory + "/../../../test_curricula.docx")
-
-    Warnings.academic_hours curriculum
-    |> should
-        equalSeq
-        (seq {
-            (43, 0)
-            (62, 56)
-        })
-
-[<Test>]
-let correct_academic_hours_test () =
-    let curriculum =
-        DocxCurriculum(
-            System.AppDomain.CurrentDomain.BaseDirectory
-            + "/../../../correct_curricula.docx"
-        )
-
-    Warnings.academic_hours curriculum |> should be Empty

@@ -9,7 +9,7 @@ namespace CurriculumParser
     /// <summary>
     /// Парсер информации о программе, которую реализует учебный плн
     /// </summary>
-    static class DocxProgrammeParser
+    public static class DocxProgrammeParser
     {
         /// <summary>
         /// Парсит информацию о программе, которую реализует учебный план
