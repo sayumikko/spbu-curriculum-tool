@@ -19,13 +19,10 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Curriculum test
-      run: cd CurriculumParser.UnitTests && dotnet test /p:CollectCoverage=true && cd ..
-    - name: Warnings test
-      run: cd Warnings.UnitTests && dotnet test /p:CollectCoverage=true 
+    - name: Test
+      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
-        files: ./Warnings.UnitTests/coverage.json,./CurriculumParser.UnitTests/coverage.json
-        flags: unittests
-        verbose: true
+        file: coverage.opencover.xml
+        directory: Warnings.UnitTests
